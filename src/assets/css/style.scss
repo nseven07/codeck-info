@@ -57,6 +57,10 @@ a#button:hover {
   left: 5px;
   border-radius: 50%;
   background: #fff; }
+.text-area{
+  display: flex;
+  align-items: center;
+}
 
 #backgroundImage {
   background-size: cover;
@@ -168,15 +172,35 @@ a:hover {
   height: 50px;
   width: 2px;
   background: #fff; }
+.staff{
+  display: flex;
+  justify-content: flex-end;
+  height: 310px;
+  padding: 0px;
+}
+
+.ourCrew{
+  display: flex;
+  justify-content: flex-end;
+  padding: 80px 0 80px 80px;
+}
 
 .comInfo {
   font-size: 18px;
   color: #fff; }
 
+.crew-text{
+  font-size: 41px;
+  font-weight: 200;
+}
+
 .main {
   position: absolute;
   bottom: 0;
   z-index: 1; }
+.images{
+  width: 30%;
+}
 
 .text-block {
   display: flex;
@@ -207,18 +231,18 @@ a:hover {
   text-align: center; }
 
 .digital-images {
-  width: 100%;
-}
-.digital-title{
+  width: 100%; }
+
+.digital-title {
   font-weight: 500;
-  text-align: center;
-}
-.digital-title2{
+  text-align: center; }
+
+.digital-title2 {
   font-size: 35px;
   padding: 25px 70px;
   text-align: center;
-  font-weight: 200;
-}
+  font-weight: 200; }
+
 @media screen and (min-width: 1500px) {
   .info {
     font-size: 30px; } }
@@ -237,8 +261,10 @@ a:hover {
   #codeckimg {
     min-width: 180px; }
   #textitem1 {
-    font-size: 30px;
-    margin: 0; }
+    font-size:50px;
+    margin: 0;
+    line-height: 50px;
+    font-weight: 100;}
   #textitem2 {
     font-size: 30px;
     margin: 0; }
