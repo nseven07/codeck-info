@@ -27,32 +27,10 @@ function showPage() {
 
 
 }
-jQuery(document).ready(function($) {
-    $('.staff-md').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true,
-        responsive: [{
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-            {
-                breakpoint: 400,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-    });
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 3
 });
 
 

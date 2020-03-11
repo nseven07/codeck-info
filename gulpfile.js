@@ -66,7 +66,7 @@ function copyIcons() {
 }
 
 function style() {
-    return gulp.src('./src/assets/css/*.scss')
+    return gulp.src('./src/assets/css/*.css')
         .pipe(gsass())
         .pipe(gulp.dest('./dist/assets/css'))
         .pipe(connect.reload());
