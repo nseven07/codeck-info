@@ -2,12 +2,23 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 100%;
-  font-family: Roboto, sans-serif; }
+  font-family: Roboto, sans-serif;
+  display: block; }
 
 .main {
   position: absolute;
   bottom: 0;
   z-index: 1; }
+
+.headTextRight {
+  flex: 5;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  font-weight: 100; }
+
+.headTextTitle {
+  font-weight: 600; }
 
 #title-text-span {
   color: #E22000;
@@ -24,9 +35,6 @@
   color: white;
   transform: scale(1.2) translate(20px, 0);
   margin-right: 40px; }
-
-a#button:hover {
-  transform: scale(1.2) translate(30px, 0); }
 
 #redRow {
   height: 300px;
@@ -57,10 +65,22 @@ a#button:hover {
   left: 5px;
   border-radius: 50%;
   background: #fff; }
-.text-area{
+
+.text-area {
   display: flex;
-  align-items: center;
-}
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center; }
+
+.headText {
+  font-weight: 300;
+  margin: 0;
+  font-family: roboto;
+  font-size: 27px; }
+
+#headTextSpecial {
+  flex: 5;
+  padding-right: 200px; }
 
 #backgroundImage {
   background-size: cover;
@@ -76,7 +96,7 @@ a#button:hover {
 
 #boyImage {
   max-width: 45%;
-  max-height: 450px;
+  max-height: 400px;
   bottom: 0;
   position: absolute; }
 
@@ -86,7 +106,11 @@ a#button:hover {
   left: 5px; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: unset; }
+
+.crew-title {
+  font-weight: 500; }
 
 .info {
   font-size: 20px;
@@ -172,35 +196,53 @@ a:hover {
   height: 50px;
   width: 2px;
   background: #fff; }
-.staff{
-  display: flex;
+
+.staff {
   justify-content: flex-end;
   height: 310px;
   padding: 0px;
-}
+  align-items: center; }
 
-.ourCrew{
+.ourCrew {
   display: flex;
-  justify-content: flex-end;
-  padding: 80px 0 80px 80px;
-}
+  justify-content: flex-start;
+  padding: 80px 0 80px 50px; }
 
 .comInfo {
   font-size: 18px;
   color: #fff; }
 
-.crew-text{
-  font-size: 41px;
-  font-weight: 200;
-}
+.crew-text {
+  font-size: 38px;
+  font-weight: 200; }
 
 .main {
   position: absolute;
   bottom: 0;
   z-index: 1; }
-.images{
-  width: 30%;
-}
+
+.bottomBlock {
+  display: flex;
+  flex-direction: column; }
+
+.bottomText {
+  font-size: 58px;
+  text-align: center;
+  color: #030303;
+  margin: 0;
+  padding: 0; }
+
+.bottomTextLink {
+  text-align: center;
+  color: #030303;
+  display: flex;
+  flex-direction: column; }
+
+.bottomRed {
+  color: #E22000; }
+
+.images {
+  max-height: 55%; }
 
 .text-block {
   display: flex;
@@ -225,6 +267,10 @@ a:hover {
   align-items: center;
   padding: 90px; }
 
+.headTextSpan {
+  color: #E22000;
+  font-weight: bold; }
+
 .digital-text {
   font-size: 21px;
   padding: 24px;
@@ -237,17 +283,55 @@ a:hover {
   font-weight: 500;
   text-align: center; }
 
-.digital-title2 {
+#digital-title2 {
   font-size: 35px;
   padding: 25px 70px;
   text-align: center;
   font-weight: 200; }
 
+.footer {
+  background-color: #E22000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; }
+
+.pages {
+  list-style: none;
+  display: flex;
+  margin: 8px 0;
+  padding: 0 30px; }
+
+.page-items {
+  color: #ffffff;
+  font-size: 13px;
+  padding-right: 20px; }
+
+.privacy {
+  color: #ffffff;
+  padding: 0 30px;
+  font-size: 14px; }
+
+.linkimages {
+  padding: 0 5px; }
+
+.social-media {
+  padding-right: 40px; }
+
 @media screen and (min-width: 1500px) {
   .info {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .headTextRight {
+    align-items: flex-end; } }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden!important; }
+  .headText {
+    font-weight: 300;
+    margin: 0;
+    font-family: roboto;
+    font-size: 25px; }
   #boyImage {
     max-width: 100%; }
   #button {
@@ -258,13 +342,17 @@ a:hover {
     font-weight: bold; }
   #buttonText {
     color: #333; }
+  .digital-text {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center; }
   #codeckimg {
     min-width: 180px; }
   #textitem1 {
-    font-size:50px;
+    font-size: 50px;
     margin: 0;
     line-height: 50px;
-    font-weight: 100;}
+    font-weight: 100; }
   #textitem2 {
     font-size: 30px;
     margin: 0; }
@@ -296,6 +384,11 @@ a:hover {
   #communication2 {
     padding: 0;
     bottom: 9%; }
+  .logo-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px; }
   #titleMain {
     padding: 0; }
   #mainContentinner {
@@ -306,4 +399,57 @@ a:hover {
   #textitem3 {
     font-size: 30px;
     padding-left: 10px;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+  .title-text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif; }
+  #headTextSpecial {
+    padding: 0; }
+  .headTextRight {
+    display: none; }
+  .digital-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px; }
+  .digital-title {
+    font-weight: 500;
+    text-align: left;
+    font-size: 30px;}
+  #digital-title2 {
+    font-size: 23px;
+    padding: 25px 3px;
+    text-align: left;
+    font-weight: 200; }
+  .imageandtext {
+    margin-top: 50pt; }
+  .ourCrew {
+    display: flex;
+    justify-content: flex-start;
+    padding: 80px 0 80px 0px;
+    flex-direction: column; }
+  .images {
+    max-height: 230px; }
+  .staff {
+    justify-content: flex-end;
+    height: 310px;
+    padding: unset;
+    align-items: center;
+    flex-direction: column; }
+  .crew-text {
+    font-size: 26px;
+    text-align: left;
+    font-weight: 200; }
+  .text-area {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+    justify-content: center; }
+  .bottomText {
+    font-size: 27px; } }
