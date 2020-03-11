@@ -80,7 +80,7 @@
 
 #headTextSpecial {
   flex: 5;
-  padding-right: 200px; }
+  padding-right: 150px; }
 
 #backgroundImage {
   background-size: cover;
@@ -317,6 +317,14 @@ a:hover {
 
 .social-media {
   padding-right: 40px; }
+.hamburger-menu{
+  width: 40px;
+  height: 4px;
+  background-color: #E22000;
+}
+#hamburgerMenu{
+  width: 20px;
+}
 
 @media screen and (min-width: 1500px) {
   .info {
@@ -326,7 +334,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden!important; }
+    overflow-x: hidden !important; }
   .headText {
     font-weight: 300;
     margin: 0;
@@ -420,7 +428,7 @@ a:hover {
   .digital-title {
     font-weight: 500;
     text-align: left;
-    font-size: 30px;}
+    font-size: 30px; }
   #digital-title2 {
     font-size: 23px;
     padding: 25px 3px;

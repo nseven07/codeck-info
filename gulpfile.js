@@ -48,7 +48,7 @@ function connectGulp() {
 }
 
 function clean() {
-    return gulp.src(dist+'**/*')
+    return gulp.src(dist)
         .pipe(gclean())
 
 }
