@@ -60,6 +60,7 @@ function scripts() {
         .pipe(connect.reload());
 }
 
+
 function scriptsDev() {
     return gulp.src(sourceJs)
         .pipe(concat('scripts.js'))
@@ -108,7 +109,7 @@ function myWatchTasks() {
 }
 
 const dev = gulp.parallel(gulp.series(clean, style, copyImages, copyIcons, scriptsDev, compile, connectGulp), myWatchTasks);
-const build = gulp.series(clean, style, copyImages, copyIcons, scripts, compile);
+const build = gulp.series(clean, style, copyImages, copyIcons, scripts, compile,);
 
 
 exports.clean = clean;
@@ -119,3 +120,4 @@ exports.build = build;
 exports.default = dev;
 exports.dev = dev;
 exports.style = style;
+
