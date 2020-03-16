@@ -29,6 +29,7 @@ const icons = 'assets/icons/';
 
 const sourceJs = [
     nodeModules + 'jquery/dist/jquery.js',
+    nodeModules + 'wowjs/dist/wow.min.js',
     nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
     homePath + 'js/main.js',
@@ -37,6 +38,7 @@ const sourceJs = [
 
 const sourceSass = [
     nodeModules + "bootstrap/scss/bootstrap.scss",
+    nodeModules + "wowjs/css/libs/animate.css",
     nodeModules + "slick-carousel/slick/slick.scss",
     homePath + "css/style.sass"
 ];

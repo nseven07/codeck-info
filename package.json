@@ -8,7 +8,8 @@
   },
   "author": "Necip Seven",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
@@ -32,6 +33,7 @@
     "gulp-twig": "^1.2.0",
     "gulp-uglify-es": "^2.0.0",
     "postcss": "^7.0.26",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.2",
+    "wowjs": "^1.1.3"
   }
 }
