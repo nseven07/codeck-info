@@ -3,6 +3,14 @@ $secondary-font: Roboto, sans-serif
 $primary-color: #E22000
 $secondary-color: #7C7C7C
 $tertiary-color: #333333
+$tertiary-color: #030303
+@import libs
+a
+  transition: 0.8s ease
+
+  &:hover
+    text-decoration: none !important
+    color: $primary-color !important
 
 @font-face
   font-family: 'All Round Gothic'
@@ -32,7 +40,7 @@ a
   left: 0
   top: 0
   background: rgba(255, 255, 255, 0.96)
-  display: flex
+  display: none
   flex-direction: column
   justify-content: space-between
   z-index: 10
@@ -124,7 +132,7 @@ a
       margin-right: 0
 
 .stick-black
-  .comInfo,
+  .comInfo
     color: $tertiary-color
     font-weight: 700
 
@@ -599,3 +607,6 @@ b.descriptive
     .bottomBar
       span
         margin-bottom: 10px
+
+@import communication
+@import information
