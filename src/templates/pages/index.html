@@ -1,9 +1,9 @@
 {% extends "layouts/layout.index.html" %}
 {% block content %}
 
-<section class="d-flex flex-column homeSection justify-content-between">
+<section class="full-height d-flex flex-column justify-content-between">
     {% include 'partials/nav.html' %}
-    <div class="row content">
+    <div class="d-flex content flex-column flex-md-row">
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h1 class="typedTitle">
                 Markanız İçin <br>
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="row content d-flex flex-column">
+    <div class="d-flex content d-flex flex-column">
         <div class="flex-column">
             <h4 class="title secondary mb-2">
                 Neler mi yapıyoruz?
@@ -31,6 +31,78 @@
             <p class="comInfo">PROJELERİMİZ</p>
             <div class="stick"></div>
         </div>
+    </div>
+</section>
+<section id="ahtapot"
+         class="projects full-height flex-row d-flex full-height justify-content-between flex-column flex-md-row">
+    <div class="content d-flex flex-column justify-content-center col-md-6">
+        <div class="cover-image">
+            <img src="../../assets/img/ahtapot-icon.png" alt="">
+        </div>
+        <h4 class="title">Akıllı Ahtapot</h4>
+        <p class="subtitle">Anında SGK teşvik ve prim hesaplama otomasyonu</p>
+        <span class="tags">marka,kurumsal kimlik,otomasyon hizmetleri</span>
+        <span class="see-project col-lg-6 d-flex">
+            <a href="#" style="color:#AA0BFF">Projeyi İncele</a>
+        </span>
+    </div>
+    <div class="p-0 d-flex justify-content-center col-md-6">
+        <img src="../../assets/img/brands/white/ahtapot-logo-white.svg" class="white-brand" alt="">
+        <div class="illustration-bg" style="background-image:url(../../assets/img/illustration/ahtapot1@2x.png)"></div>
+    </div>
+</section>
+<section id="hamidiye"
+         class="projects full-height flex-row d-flex full-height justify-content-between flex-column flex-md-row">
+    <div class="content d-flex flex-column justify-content-center col-md-6">
+        <div class="cover-image">
+            <img src="../../assets/img/hamidiye-icon.png" alt="">
+        </div>
+        <h4 class="title">Hamidiye</h4>
+        <p class="subtitle">Bayi uygulamaları, kullanıcı uygulamaları ve web uygulamaları</p>
+        <span class="tags">mobil uygulama, haritalandırma, kullanıcı deneyimi</span>
+        <span class="see-project col-lg-6 d-flex">
+            <a href="#" style="color:#E52A7E">Projeyi İncele</a>
+        </span>
+    </div>
+    <div class="p-0 d-flex justify-content-center col-md-6">
+        <img src="../../assets/img/brands/white/hamidiye-white.svg" class="white-brand" alt="">
+        <div class="illustration-bg" style="background-image:url(../../assets/img/illustration/hamidiye1@2x.png)"></div>
+    </div>
+</section>
+<section id="podbia"
+         class="projects full-height flex-row d-flex full-height justify-content-between flex-column flex-md-row">
+    <div class="content d-flex flex-column justify-content-center col-md-6">
+        <div class="cover-image">
+            <img src="../../assets/img/podbia-icon.png" alt="">
+        </div>
+        <h4 class="title">Podbia</h4>
+        <p class="subtitle">Podcast uygulaması, backend geliştirme ve tasarım geliştirmeleri</p>
+        <span class="tags">mailing, backend, tasarım, kullanıcı deneyimi</span>
+        <span class="see-project col-lg-6 d-flex">
+            <a href="#" style="color:#FD0069">Projeyi İncele</a>
+        </span>
+    </div>
+    <div class="p-0 d-flex justify-content-center col-md-6">
+        <img src="../../assets/img/brands/white/podbia-white.svg" class="white-brand" alt="">
+        <div class="illustration-bg" style="background-image:url(../../assets/img/illustration/pannom1@2x.png)"></div>
+    </div>
+</section>
+<section id="bmsumer"
+         class="projects full-height flex-row d-flex full-height justify-content-between flex-column flex-md-row">
+    <div class="content d-flex flex-column justify-content-center col-md-6">
+        <div class="cover-image">
+            <img id="b-mockup" src="../../assets/img/bmsumerMockup@2x.png" alt="">
+        </div>
+        <h4 class="title">Bmsumer</h4>
+        <p class="subtitle">Podcast uygulaması, backend geliştirme ve tasarım geliştirmeleri</p>
+        <span class="tags">mailing, backend, tasarım, kullanıcı deneyimi</span>
+        <span class="see-project col-lg-6 d-flex">
+            <a href="#" style="color:#1C7EDD">Projeyi İncele</a>
+        </span>
+    </div>
+    <div class="p-0 d-flex justify-content-center col-md-6">
+        <img src="../../assets/img/brands/white/bmsumer-white.svg" class="white-brand" alt="">
+        <div class="illustration-bg" style="background-image:url(../../assets/img/illustration/bmsumer1@2x.png)"></div>
     </div>
 </section>
 {% endblock %}
