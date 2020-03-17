@@ -37,9 +37,6 @@ const sourceJs = [
 ];
 
 const sourceSass = [
-    nodeModules + "bootstrap/scss/bootstrap.scss",
-    nodeModules + "wowjs/css/libs/animate.css",
-    nodeModules + "slick-carousel/slick/slick.scss",
     homePath + "css/style.sass"
 ];
 
@@ -92,7 +89,9 @@ function copyFiles() {
 
 function style() {
     return gulp.src(sourceSass)
-        .pipe(gsass())
+        .pipe(gsass({
+            includePaths: ['node_modules']
+        }))
         .pipe(gulp.dest(dist + 'assets/css'))
         .pipe(connect.reload());
 }
