@@ -8,10 +8,9 @@
   },
   "author": "Necip Seven",
   "license": "ISC",
-  "dependencies": {
-    "fullpage.js": "^3.0.8"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "fullpage.js": "^3.0.8",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1",
