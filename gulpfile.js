@@ -18,7 +18,7 @@ const open = require('gulp-open');
 const header = require('gulp-header');
 const imagemin = require('gulp-imagemin');
 
-const templates = './src/templates/';
+const templates = './src/presentation/';
 const dist = './dist/';
 const homePath = './src/assets/';
 const nodeModules = './node_modules/';
@@ -43,9 +43,9 @@ const sourceSass = [
 
 function compile() {
     const twig = require('gulp-twig');
-    return gulp.src('./src/templates/pages/*.html')
+    return gulp.src('./src/presentation/pages/*.html')
         .pipe(twig({
-            base: './src/templates'
+            base: './src/presentation'
         }))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());
@@ -100,7 +100,7 @@ function style() {
 function myWatchTasks() {
     gulp.watch(['./src/assets/css/*.sass'], style);
     gulp.watch(['./src/assets/js/*.js'], scriptsDev);
-    gulp.watch(['./src/templates/**/*.html'], compile)
+    gulp.watch(['./src/presentation/**/*.html'], compile)
 }
 
 const dev = gulp.parallel(gulp.series(clean, style, copyFiles, scriptsDev, compile, connectGulp), myWatchTasks);

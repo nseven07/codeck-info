@@ -26,6 +26,7 @@ nav, .content
 
 .nav-fix
   position: fixed
+  display: none
   width: 100%
   z-index: 99999
 
@@ -45,7 +46,7 @@ a
   width: 100%
   height: 100vh
   left: 0
-  top: -100vh
+  top: -110vh
   background: rgba(255, 255, 255, 0.96)
   display: flex
   flex-direction: column
@@ -220,10 +221,10 @@ b.descriptive
 
 .button-inner
   width: 50px
-  position: relative
   height: 50px
-  top: 5px
-  left: 5px
+  padding: 15px
+  display: flex
+  justify-content: center
   border-radius: 50%
   background: #fff
 
@@ -721,86 +722,29 @@ h3.subtitle
   .hamburger-menu
     width: 30px
 
-body
-  overflow-x: hidden
-#shortStick
-  width: 20px
-  margin: 5px 0 0 0
-
-.menuBar
-  display: flex
-  flex-direction: column
-  align-items: flex-end
-
-.topBlock
-  display: flex
-  justify-content: space-between
-  padding: 80px
-
-.buttons
-  padding-left: 70px
-  display: flex
-  align-items: center
-  justify-content: space-between
-
-.firstText
-  font-size: 40px
-
-.secondText
-  font-size: 20px
-
-.nav-item
-  border: 1px solid #EDEDED
-  border-radius: 20px
-  margin-left: 10px
-
-.nav-link
-  color: #030303
-
-.nav-link:hover
-  color: #ffffff
-
-.nav-item:hover
-  background: #E22000
-
-.longStick
-  border: 1px solid #EDEDED
-  width: 65%
-  height: 1px
-
-.firstProject
-  display: flex
-  padding: 80px
-
-
-.projectImages
-  display: flex
-  align-items: center
-
-
 .stickBetween
   margin: auto
-  width: 90%
+  width: 91%
   height: 1px
   border: 1px solid #EDEDED
 
-.projectImageItems
-  margin-left: 10px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.show
+  display: flex!important
+.filterDiv
+  display: none
+.btn
+  border: 1px solid #EDEDED
+  font-size: 24px
+  color: $tertiary-color
+  padding: 15px 30px
+  border-radius: 50px
+  font-family: $primary-font
+  margin-right: 20px
+  &:last-child
+    margin-right: 0
+button.active
+  color: white
+  background: $primary-color
 
 @import communication
 @import information

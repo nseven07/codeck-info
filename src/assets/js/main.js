@@ -15,13 +15,38 @@ $('#menuActive').click(function () {
 
 //Slick
 $(document).ready(function () {
-    $('.staff-slider').slick({
+    $('.staff-slider, .projectImages').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
         dots: false,
         speed: 300,
-        autoplay: true
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     $('.mobil-logo').slick({
         slidesToShow: 4,
@@ -31,10 +56,10 @@ $(document).ready(function () {
 //---------
 
 //Full Page Slider
-$(document).ready(function() {
+$(document).ready(function () {
     $('#fullpage').fullpage({
         //options here
-        autoScrolling:true,
+        autoScrolling: true,
         scrollHorizontally: true
     });
 
@@ -45,14 +70,48 @@ $(document).ready(function() {
 
 window.onscroll = changePos;
 
-function changePos() {
-    var navNorm = document.getElementById("nav-norm");
-    var navFix = document.getElementById("nav-fix");
-    if (window.pageYOffset > 20) {
-        navNorm.style.display = "none";
-        navFix.style.display = "flex";
-    } else {
-        navNorm.style.display = "";
-        navFix.style.display = "none";
+
+filterSelection("all");
+
+function filterSelection(c) {
+    let x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c === "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        removeClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
     }
+}
+
+function addClass(element, name) {
+    let i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) === -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+}
+
+function removeClass(element, name) {
+    let i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+const btnContainer = document.getElementById("buttons");
+const btns = btnContainer.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }
