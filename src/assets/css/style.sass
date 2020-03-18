@@ -27,6 +27,7 @@ nav, .content
 .nav-fix
   position: fixed
   width: 100%
+  z-index: 99999
 
 a
   transition: 0.8s ease
@@ -446,10 +447,11 @@ b.descriptive
   width: 40px
   height: 4px
   background-color: $primary-color
-
-#hamburgerMenu
+#hamburgerMenu, #hamburgerMenu-lovergit
   width: 20px
 
+.hamburger-menu-white
+  background-color: white!important
 .cover-image
   position: absolute
   z-index: 20
@@ -461,6 +463,12 @@ b.descriptive
     width: 45%
 #b-mockup
   transform: rotate(-20deg)
+h3.subtitle
+  font-weight: 800
+  margin-top: 30px
+  font-family: $secondary-font
+  color: $tertiary-color
+  font-size: 26px
 @media screen and (max-width: 1200px)
   .menuItems
     span
@@ -495,6 +503,8 @@ b.descriptive
 
   .subtitle
     font-size: 24px
+    margin-top: 30px
+    text-align: center
 
   .description
     font-size: 14px
