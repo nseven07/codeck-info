@@ -32,6 +32,7 @@ const sourceJs = [
     nodeModules + 'wowjs/dist/wow.min.js',
     nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
+    nodeModules + 'fullpage.js/dist/fullpage.js',
     homePath + 'js/main.js',
     homePath + 'js/console.js',
 ];
