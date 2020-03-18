@@ -2,7 +2,7 @@
 {% block content %}
 
 
-<div id="loader">
+<div class="d-none" id="loader">
     <img class="loader-img" src="../../assets/img/ezgif-3-c10ad3de5c54.gif" alt="">
 </div>
 <div class="container-fluid" id="mainContent">
@@ -24,11 +24,6 @@
     </div>
     <div class="row" id="redRow">
         <div class="col-12" id="redRowitems">
-            <a href="" target="_blank" id="button">
-                <div class="button-inner">
-                    <img class="button-img" src="../../assets/img/left-arrow.svg" alt="">
-                </div>
-            </a>
             <div class="main d-none d-lg-block ">
                 <p class="comInfo">DAHA FAZLA BİLGİ</p>
                 <div class="stick"></div>
@@ -42,23 +37,26 @@
     <div class="text-block col-12 col-md-4 d-flex flex-column">
         <h4 class="title">Müşterilerimiz</h4>
         <p class="subtitle">Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.</p></div>
-    <div class="main-logo-block-mb ">
-        <img class="col-12 d-block d-md-none" src="../../assets/img/brands/medyas.svg" alt="">
-
-    </div>
-    <div class="main-logo-block col-8 d-none d-md-block">
-        <div class="logo-block row ">
+    <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-lg-flex d-md-flex col-sm-12">
+        <div class="logo-block row d-lg-flex d-md-flex d-sm-none">
             <img class="col-3" src="../../assets/img/brands/medyas.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/hamidiye.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/amvg.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/podbia.svg" alt="">
-
-        </div>
-        <div class="logo-block2 row">
             <img class="col-3" src="../../assets/img/brands/bmsumer.png" alt="">
             <img class="col-3" src="../../assets/img/brands/akilliahtapot.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/pryapim.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/kafeinbox.svg" alt="">
+        </div>
+        <div class="mobil-logo d-lg-none d-md-none d-sm-block">
+            <div><img class="img-fluid" src="../../assets/img/brands/medyas.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/hamidiye.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/amvg.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/podbia.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/bmsumer.png" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/akilliahtapot.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/pryapim.svg" alt=""></div>
+            <div><img class="img-fluid" src="../../assets/img/brands/kafeinbox.svg" alt=""></div>
         </div>
     </div>
 </div>
@@ -87,20 +85,17 @@
         </div>
     </div>
 </div>
-<div class="ourCrew">
-    <div class="text-area">
+<div class="ourCrew container-fluid d-flex flex-lg-row flex-md-column flex-sm-column">
+    <div class="text-area col-lg-4 col-md-12 col-sm-12">
         <h4 class="title">Ekibimiz</h4>
         <p class="subtitle">Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz;</p></div>
-    <div class="staff-md col-12 d-flex d-md-none">
-        <img class="images" src="../../assets/img/personals/Cagdas@2x.png" alt="">
-        <img class="images" src="../../assets/img/personals/Melek@2x.png" alt="">
-        <img class="images" src="../../assets/img/personals/Samed@2x.png" alt="">
-    </div>
-
-    <div class="staff col-8 d-none d-md-flex">
-        <img class="images" src="../../assets/img/personals/Cagdas@2x.png" alt="">
-        <img class="images" src="../../assets/img/personals/Melek@2x.png" alt="">
-        <img class="images" src="../../assets/img/personals/Samed@2x.png" alt="">
+    <div class="staff-slider col-lg-8 col-md-12 col-sm-12 d-flex align-items-center">
+        <div><img class="img-fluid" src="../../assets/img/personals/Cagdas@2x.png" alt=""></div>
+        <div><img class="img-fluid" src="../../assets/img/personals/Melek@2x.png" alt=""></div>
+        <div><img class="img-fluid" src="../../assets/img/personals/Samed@2x.png" alt=""></div>
+        <div><img class="img-fluid" src="../../assets/img/personals/Samed@2x.png" alt=""></div>
+        <div><img class="img-fluid" src="../../assets/img/personals/Samed@2x.png" alt=""></div>
+        <div><img class="img-fluid" src="../../assets/img/personals/Samed@2x.png" alt=""></div>
     </div>
 </div>
 <div class="callToAction">

@@ -8,14 +8,24 @@ function showPage() {
     // document.getElementById("visible").style.overflow = "auto";
 }
 
+$('#menuActive').click(function () {
+    $('.fullMenu').toggleClass('menu-active')
+});
+
+
 //Slick
 $(document).ready(function () {
-    $('.staff').slick({
+    $('.staff-slider').slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
         speed: 300,
+        autoplay: true
+    });
+    $('.mobil-logo').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
     })
 });
 //---------
