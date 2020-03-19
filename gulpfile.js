@@ -84,7 +84,7 @@ function clean() {
 
 function copyFiles() {
     return gulp
-        .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*'], {base: './src/'})
+        .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*', './src/assets/presentation/**/*'], {base: './src/'})
         //.pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5, svgoPlugins: [{removeViewBox: true}]}))
         .pipe(gulp.dest(dist))
 }
