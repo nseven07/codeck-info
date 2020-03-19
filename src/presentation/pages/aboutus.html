@@ -5,16 +5,16 @@
 <div class="d-none" id="loader">
     <img class="loader-img" src="../../assets/img/ezgif-3-c10ad3de5c54.gif" alt="">
 </div>
-<div class="container-fluid" id="mainContent">
+<div class="container-fluid d-flex flex-column justify-content-between aboutUs-full">
     {% include 'partials/nav.html' %}
-    <div class="row content">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="row content mt-md-0 mt-sm-5 mt-5">
+        <div class="col-md-6 col-sm-12">
             <h4 class="title text-left">Biz Kimiz?</h4>
             <p class="subtitle text-left" id="subtitleSpecial" style="">Hayalleri tasarlayan,<br> Web teknolojileri
                 geliştiren,<br> Heyecan dolu <br><b class="descriptive">Bir ekibiz!</b>
             </p>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-6 col-sm-12">
             <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                 tempor
                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -23,22 +23,22 @@
         </div>
     </div>
     <div class="row" id="redRow">
-        <div class="col-12" id="redRowitems">
+        <div class="col-md-12" id="redRowitems">
             <div class="main d-none d-lg-block ">
                 <p class="comInfo">DAHA FAZLA BİLGİ</p>
                 <div class="stick"></div>
             </div>
         </div>
         <div class="container-fluid" id="bottomColor"></div>
-        <img id="boyImage" src="../../assets/img/boyimg2.png" alt=""></div>
+        <img id="boyImage" class="" src="../../assets/img/boyimg2.png" alt=""></div>
 
 </div>
 <div class="logo-content flex-column flex-md-row">
     <div class="text-block col-12 col-md-4 d-flex flex-column">
         <h4 class="title">Müşterilerimiz</h4>
         <p class="subtitle">Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.</p></div>
-    <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-lg-flex d-md-flex col-sm-12">
-        <div class="logo-block row d-lg-flex d-md-flex d-sm-none">
+    <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-md-flex col-sm-12">
+        <div class="logo-block row d-md-flex d-sm-none">
             <img class="col-3" src="../../assets/img/brands/medyas.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/hamidiye.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/amvg.svg" alt="">
@@ -48,7 +48,7 @@
             <img class="col-3" src="../../assets/img/brands/pryapim.svg" alt="">
             <img class="col-3" src="../../assets/img/brands/kafeinbox.svg" alt="">
         </div>
-        <div class="mobil-logo d-lg-none d-md-none d-sm-block">
+        <div class="mobil-logo d-lg-none d-sm-block">
             <div><img class="img-fluid" src="../../assets/img/brands/medyas.svg" alt=""></div>
             <div><img class="img-fluid" src="../../assets/img/brands/hamidiye.svg" alt=""></div>
             <div><img class="img-fluid" src="../../assets/img/brands/amvg.svg" alt=""></div>
@@ -85,7 +85,7 @@
         </div>
     </div>
 </div>
-<div class="ourCrew container-fluid d-flex flex-lg-row flex-md-column flex-sm-column">
+<div class="ourCrew d-flex flex-lg-row flex-sm-column flex-column">
     <div class="text-area col-lg-4 col-md-12 col-sm-12">
         <h4 class="title">Ekibimiz</h4>
         <p class="subtitle">Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz;</p></div>
@@ -107,22 +107,23 @@
 
     <div class="social-media d-flex d-md-none">
         <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img src="../../assets/img/instagram.svg"
-                                                                                    alt=""></a>
+        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
+                src="../../assets/img/instagram.svg"
+                alt=""></a>
         <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
                 src="../../assets/img/linkedin.svg"
                 alt=""></a>
     </div>
     <ul class="pages flex-column flex-md-row">
-        <li><a href="" class="page-items">Hakkımızda</a></li>
-        <li><a href="" class="page-items">Projlerimiz</a></li>
-        <li><a href="" class="page-items">İletişim</a></li>
-        <li><a href="" class="page-items">Blog</a></li>
+        <li><a href="/aboutus.html" class="page-items">Hakkımızda</a></li>
+        <li><a href="/projects.html" class="page-items">Projlerimiz</a></li>
+        <li><a href="/communication.html" class="page-items">İletişim</a></li>
     </ul>
     <div class="social-media d-none d-md-flex">
         <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img src="../../assets/img/instagram.svg"
-                                                                                    alt=""></a>
+        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
+                src="../../assets/img/instagram.svg"
+                alt=""></a>
         <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
                 src="../../assets/img/linkedin.svg"
                 alt=""></a>
@@ -130,6 +131,5 @@
     <div class="privacy">© 2020 Codeck Tüm Hakları Saklıdır</div>
 
 </div>
-
 
 {% endblock %}

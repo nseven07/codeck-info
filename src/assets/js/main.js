@@ -1,8 +1,10 @@
 $('#menuActive').click(function () {
-    $('.fullMenu').toggleClass('menu-active')
+    $('.fullMenu, .menuItems').toggleClass("menu-aktif");
+    $('.fullMenu').toggleClass('hidden');
+    $('#hamburgerMenu').toggleClass("aktif");
+    $('#menuActive').addClass('kapat')
+
 });
-
-
 //Slick
 $(document).ready(function () {
     $('.staff-slider, .projectImages').slick({
@@ -59,7 +61,6 @@ $(document).ready(function () {
             dragAndMove: true,
             touchSensitivity: 10,
         });
-
     }
 });
 //---------
@@ -107,11 +108,10 @@ if (projectPage) {
     const btns = btnContainer.getElementsByClassName("btn");
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
-            const current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
+            const current = document.getElementsByClassName("aktif");
+            current[0].className = current[0].className.replace(" aktif", "");
+            this.className += " aktif";
         });
     }
-
 }
 
