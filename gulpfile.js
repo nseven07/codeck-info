@@ -32,6 +32,7 @@ const sourceJs = [
     nodeModules + 'wowjs/dist/wow.min.js',
     nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
+    nodeModules + '@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     nodeModules + 'fullpage.js/dist/fullpage.js',
     nodeModules + 'fullpage.js/dist/fullpage.extensions.min.js',
     homePath + 'js/main.js',

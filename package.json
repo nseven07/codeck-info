@@ -8,7 +8,9 @@
   },
   "author": "Necip Seven",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
+  },
   "devDependencies": {
     "fullpage.js": "^3.0.8",
     "bootstrap": "^4.4.1",

@@ -17,8 +17,10 @@ $forth-color: #AA0BFF
 
 nav, .content
   padding: 40px 80px 0 80px
+
 body
   min-width: 320px
+
 a
   transition: 0.8s ease
 
@@ -160,8 +162,10 @@ a
 .secondary
   color: $secondary-color
   font-weight: 100
+
 .half-title
   width: 45%
+
 .works
   a
     font-size: 48px
@@ -204,6 +208,18 @@ b.descriptive
   color: white
   transform: scale(1.2) translate(20px, 0)
   margin-right: 40px
+
+.btn
+  border: 1px solid #EDEDED
+  font-size: 24px
+  color: $tertiary-color
+  padding: 15px 30px
+  border-radius: 50px
+  font-family: $primary-font
+  margin-right: 20px
+
+  &:last-child
+    margin-right: 0
 
 #redRow
   height: 300px
@@ -284,12 +300,14 @@ b.descriptive
   border-radius: 10px
   padding: 20px 40px
   font-size: 19px
+
 .aktif
-  background-color: white!important
-  color: white!important
+  background-color: white !important
+  color: white !important
+
 .btn-active
   background-color: $primary-color
-  color: white!important
+  color: white !important
 
 #button2, #button4
   width: 190px
@@ -488,6 +506,11 @@ h3.subtitle
   font-size: 26px
 
 @media screen and (max-width: 1200px)
+  .btn
+    font-size: 18px
+    margin-right: 10px
+    padding: 10px 20px
+    margin-bottom: 10px
   .menuItems
     span
       font-size: 36px
@@ -689,6 +712,9 @@ h3.subtitle
     padding: 40px
 
 @media (max-width: 576px)
+  #buttons
+    display: flex
+    flex-direction: column
   .subtitle
     font-size: 24px
   .logo-block, #redRow
@@ -779,18 +805,6 @@ h3.subtitle
 
 .filterDiv
   display: none
-
-.btn
-  border: 1px solid #EDEDED
-  font-size: 24px
-  color: $tertiary-color
-  padding: 15px 30px
-  border-radius: 50px
-  font-family: $primary-font
-  margin-right: 20px
-
-  &:last-child
-    margin-right: 0
 
 button.active
   color: white
