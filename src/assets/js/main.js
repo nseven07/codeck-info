@@ -1,9 +1,33 @@
 $('#menuActive').click(function () {
-    $('.fullMenu, .menuItems').toggleClass("menu-aktif");
+    $('.fullMenu, .menuItems').toggleClass("menu-btn-active");
     $('.fullMenu').toggleClass('hidden');
-    $('#hamburgerMenu').toggleClass("aktif");
+    $('#hamburgerMenu').toggleClass("menu-active");
     $('#menuActive').addClass('kapat')
 
+});
+$(document).ready(function () {
+    let pathname, webApp, mobil, grafiktasarim;
+
+    pathname = $(location).attr('href');
+    webApp = pathname === 'http://localhost:8080/projects.html?webApp=true';
+    mobil = pathname === 'http://localhost:8080/projects.html?mobil=true';
+    grafiktasarim = pathname === 'http://localhost:8080/projects.html?grafiktasarim=true';
+
+    if (webApp) {
+        $('#webApp').addClass('btn-active').trigger("click");
+    } else {
+        $('#webApp').removeClass('btn-active');
+    }
+    if (mobil) {
+        $('#mobile').addClass('btn-active').trigger("click");
+    } else {
+        $('#mobile').removeClass('btn-active');
+    }
+    if (grafiktasarim) {
+        $('#grafiktasarim').addClass('btn-active').trigger("click");
+    } else {
+        $('#grafiktasarim').removeClass('btn-active');
+    }
 });
 //Slick
 $(document).ready(function () {
@@ -43,13 +67,13 @@ $(document).ready(function () {
     $('.mobil-logo').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-    })
+    });
 });
 //---------
 
 //Full Page Slider
 $(document).ready(function () {
-    const isHomePage = document.getElementById('home-page')
+    const isHomePage = document.getElementById('home-page');
     if (isHomePage) {
         $('#home-page').fullpage({
             //options here
@@ -65,7 +89,7 @@ $(document).ready(function () {
 });
 //---------
 
-const projectPage = document.getElementById('project-page')
+const projectPage = document.getElementById('project-page');
 
 if (projectPage) {
     filterSelection("all");
@@ -108,9 +132,9 @@ if (projectPage) {
     const btns = btnContainer.getElementsByClassName("btn");
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
-            const current = document.getElementsByClassName("aktif");
-            current[0].className = current[0].className.replace(" aktif", "");
-            this.className += " aktif";
+            const current = document.getElementsByClassName("btn-active");
+            current[0].className = current[0].className.replace(" btn-active", "");
+            this.className += " btn-active";
         });
     }
 }
