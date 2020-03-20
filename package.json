@@ -1,0 +1,41 @@
+{
+  "name": "codeck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Necip Seven",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
+  },
+  "devDependencies": {
+    "fullpage.js": "^3.0.8",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1",
+    "autoprefixer": "^9.7.4",
+    "clean-css": "^4.1.11",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-open": "^3.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify-es": "^2.0.0",
+    "postcss": "^7.0.26",
+    "minimist": ">=1.2.2",
+    "wowjs": "^1.1.3"
+  }
+}

@@ -1,0 +1,864 @@
+$primary-font: all-round-gothic, sans-serif
+$secondary-font: Roboto, sans-serif
+$primary-color: #E22000
+$secondary-color: #7C7C7C
+$tertiary-color: #333333
+$tertiary-color: #030303
+$forth-color: #AA0BFF
+@import libs
+
+@font-face
+  font-family: 'all-round-gothic'
+  src: url(../../assets/font/allroundgothic-book-webfont.eot)
+  src: url(../../assets/font/allroundgothic-book-webfont.woff2) format('woff2'),
+  url(../../assets/font/allroundgothic-book-webfont.woff) format('woff')
+  font-weight: normal
+  font-style: normal
+
+nav, .content
+  padding: 40px 80px 0 80px
+
+body
+  min-width: 320px
+
+a
+  transition: 0.8s ease
+
+  &:hover
+    text-decoration: none !important
+    color: #ffeb3b
+
+.primaryFont
+  font-family: $primary-font
+  font-size: 16px
+
+#codeckimg, .hamburger-menu
+  z-index: 25
+  position: relative
+
+.fullMenu
+  visibility: visible
+  display: flex
+  position: absolute
+  width: 100%
+  height: 100vh
+  left: 0
+  top: 0
+  flex-direction: column
+  justify-content: space-between
+  padding: 0 80px 40px 80px
+  z-index: 20
+
+  &:before
+    position: absolute
+    width: 100%
+    left: 0
+    z-index: -1
+    content: ""
+    height: 0
+    transition: all .35s ease
+    background: $primary-color
+
+.hidden
+  visibility: hidden
+
+.menu-btn-active
+  opacity: .9
+
+  &:before
+    height: 100% !important
+
+.menuItems
+  display: flex
+  flex: 1
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  span
+    padding: 30px
+    font-size: 48px
+    font-family: $secondary-font
+    font-weight: 800
+
+  a
+    color: white
+
+    &:first-child
+      padding-top: 0
+
+    &:last-child
+      padding-bottom: 0
+
+.full-height
+  height: 100%
+
+.aboutUs-full
+  height: 100vh
+
+.bottomBar
+  font-size: 20px
+  color: white
+  font-family: $primary-font
+  display: flex
+  justify-content: space-between
+
+  span
+    a, b
+      color: white
+      font-weight: 300
+
+  .socials
+    a
+      color: white
+      margin-right: 20px
+
+      &:last-child
+        margin-right: 0
+
+.main
+  position: absolute
+  bottom: 0
+  z-index: 1
+
+.headTextRight
+  flex: 5
+  display: flex
+  text-align: right
+  align-items: center
+  font-weight: 100
+
+.title
+  font-family: $primary-font
+  font-size: 24px
+
+.typedTitle
+  font-weight: 700
+  color: $tertiary-color
+
+.subtitle
+  font-family: $secondary-font
+  font-size: 38px
+  font-weight: 100
+  color: $secondary-color
+
+.tags
+  font-family: $primary-font
+  color: $secondary-color
+  font-size: 16px
+
+.see-project
+  font-size: 18px
+  font-family: $secondary-font
+  font-weight: 800
+  text-transform: uppercase
+  padding: 0
+  position: absolute
+  bottom: 80px
+
+.white-brand
+  position: absolute
+  right: 80px
+  bottom: 80px
+
+.secondary
+  color: $secondary-color
+  font-weight: 100
+
+.half-title
+  width: 45%
+
+.works
+  a
+    font-size: 48px
+    font-weight: 700
+    color: $tertiary-color
+    margin-right: 30px
+
+    &:last-child
+      margin-right: 0
+
+.stick-black
+  .comInfo
+    color: $tertiary-color
+    font-weight: 700
+
+  .stick
+    background-color: $secondary-color
+    opacity: .2
+
+.description
+  font-family: $secondary-font
+  color: $secondary-color
+  font-size: 18px
+  font-weight: 300
+  text-align: right
+  line-height: 40px
+
+.presentationButton
+  width: 300px
+  height: 60px
+  margin-top: 50px
+  background: rgba(255, 255, 255, 0.5)
+  border-radius: 50px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 5px
+
+.buttonCircle
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  background-color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+
+.buttonText
+  font-family: $secondary-font
+  color: #ffffff
+  font-size: 17px
+  margin: 0
+  padding: 0 20px 0 0
+
+b.descriptive
+  font-weight: 800
+  color: $primary-color !important
+
+.mediaIcons
+  margin: 0 5px
+
+.button, #button
+  transition: 0.8s cubic-bezier(0, 0.38, 0, 1)
+
+.button:hover
+  background-color: $primary-color
+  color: white
+  transform: scale(1.2) translate(20px, 0)
+  margin-right: 40px
+
+.btn
+  border: 1px solid #EDEDED
+  font-size: 24px
+  color: $tertiary-color
+  padding: 15px 30px
+  border-radius: 50px
+  font-family: $primary-font
+  margin-right: 20px
+
+  &:last-child
+    margin-right: 0
+
+#redRow
+  height: 300px
+  background: $primary-color
+  position: relative
+  display: flex
+  justify-content: flex-end
+
+.illustration-bg
+  width: 100%
+  background: no-repeat
+  background-size: cover
+
+#button
+  width: 60px
+  height: 60px
+  display: flex
+  background: rgba(255, 255, 255, 0.3)
+  margin-top: 50px
+  border-radius: 30px
+
+#buttonText
+  color: #fff
+  text-align: center
+  font-family: $secondary-font
+  font-size: 18px
+
+.button-inner
+  width: 50px
+  height: 50px
+  padding: 15px
+  display: flex
+  justify-content: center
+  border-radius: 50%
+  background: #fff
+
+.text-area
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  justify-content: center
+
+.headText
+  font-weight: 300
+  margin: 0
+  font-family: $secondary-font
+  font-size: 27px
+
+#headTextSpecial
+  flex: 5
+  padding-right: 150px
+
+#backgroundImage
+  background-size: cover
+  background-image: url(../img/communication/background.png)
+  position: absolute
+  width: 100%
+  background-position: center
+  height: 100%
+
+#boyColumn
+  height: 45%
+  right: 0
+
+#boyImage
+  max-width: 45%
+  max-height: 400px
+  bottom: 0
+  position: absolute
+
+.info
+  font-family: $secondary-font
+  font-size: 20px
+  font-weight: 200
+
+.button
+  background: rgba(255, 255, 255, 0.3)
+  border-radius: 10px
+  padding: 20px 40px
+  font-size: 19px
+
+.aktif
+  background-color: white !important
+  color: white !important
+
+.menu-active
+  background-color: white!important
+
+.btn-active
+  background-color: $primary-color
+  color: white !important
+
+#button2, #button4
+  width: 190px
+
+#emptyLine
+  height: 100px
+  background: white
+
+#communication1
+  position: absolute
+  top: 8%
+  padding: 0 80px
+
+#communication2
+  position: absolute
+  right: 0
+  bottom: 10%
+  padding: 0 80px
+
+#redRowitems
+  padding: 0 0 80px 80px
+
+#mainContent
+  display: flex
+  flex-direction: column
+  height: 100vh
+  justify-content: space-between
+
+#bottomColor
+  height: 10%
+  position: absolute
+  bottom: 0
+  background: #D11E00
+
+#titleMain
+  padding: 80px
+
+#loader
+  background: #fff
+  position: absolute
+  z-index: 2
+  align-content: flex-end
+  flex-direction: row
+  display: block
+  width: 100%
+  height: 100vh
+
+  .loader-img
+    position: absolute
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 20vw
+    height: auto
+
+
+.stick
+  height: 50px
+  width: 2px
+  background: #fff
+
+.staff
+  justify-content: flex-end
+  height: 310px
+  padding: 0
+  align-items: center
+
+.ourCrew
+  display: flex
+  justify-content: flex-start
+  padding: 130px 80px
+
+.comInfo
+  font-size: 18px
+  color: #fff
+
+.main
+  position: absolute
+  bottom: 0
+  z-index: 1
+
+.callToAction
+  display: flex
+  flex-direction: column
+
+  span
+    font-size: 58px
+    line-height: 68px
+    font-weight: 700
+    text-align: center
+    color: $tertiary-color
+    margin: 0 0 30px 0
+    padding: 0
+
+  a
+    text-align: center
+    color: #030303
+    display: flex
+    flex-direction: column
+    margin: 0 0 30px 0
+
+.images
+  max-height: 55%
+
+.text-block
+  display: flex
+  flex-direction: column
+  align-content: center
+  padding: 0
+  justify-content: center
+
+.text
+  padding-right: 50px
+  font-size: 36px
+  font-weight: 300
+  line-height: 48px
+
+.logo-content
+  display: flex
+  padding: 130px 80px
+
+.digital-experience
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 130px 80px
+
+.digital-text
+  font-size: 28px
+  font-family: $primary-font
+  text-align: center
+
+.headTextSpan
+  color: $primary-color
+  font-weight: bold
+
+.digital-images
+  width: 100%
+
+.footer
+  background-color: $primary-color
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 10px
+  font-family: $primary-font
+  padding: 20px
+
+.pages
+  list-style: none
+  display: flex
+  margin: 8px 0
+  padding: 0 30px
+
+.page-items
+  color: #ffffff
+  font-size: 13px
+  padding-right: 20px
+
+.privacy
+  color: #ffffff
+  padding: 0 30px
+  font-size: 14px
+
+.linkimages
+  padding: 0 5px
+
+.social-media
+  padding-right: 40px
+
+.hamburger-menu
+  width: 40px
+  height: 4px
+  background-color: $primary-color
+
+#hamburgerMenu, #hamburgerMenu-lovergit
+  width: 20px
+
+.hamburger-menu-white
+  background-color: white !important
+
+.cover-image
+  position: absolute
+  z-index: 20
+  left: 100%
+  transform: translate(-50%)
+
+.ahtapot-phone
+  height: 580px
+#b-mockup
+  transform: rotate(-20deg)
+  height: 580px
+
+h3.subtitle
+  font-weight: 800
+  margin-top: 30px
+  font-family: $secondary-font
+  color: $tertiary-color
+  font-size: 26px
+
+@media screen and (max-width: 1200px)
+  .btn
+    font-size: 18px
+    margin-right: 10px
+    padding: 10px 20px
+    margin-bottom: 10px
+  .menuItems
+    span
+      font-size: 36px
+  .bottomBar
+    font-size: 14px
+
+    .socials
+      a
+        margin-right: 10px
+  #boyImage
+    height: 100%
+  .description
+    font-size: 14px
+
+  .info
+    font-size: 30px
+
+  .digital-text
+    font-size: 18px
+
+  .headTextRight
+    align-items: flex-end
+  .content
+    .cover-image
+      img
+        height: 320px
+
+    p.subtitle
+      font-size: 24px
+
+@media screen and (max-width: 768px)
+  body
+    overflow-x: hidden !important
+
+  nav, .content
+    padding: 20px 40px 0 40px
+
+  .aboutUs-full
+    height: auto
+
+  h3.subtitle
+    font-size: 24px
+    margin-top: 30px
+    text-align: center
+
+  .description
+    font-size: 14px
+    text-align: left
+
+  .digital-text
+    font-size: 20px
+
+  #boyImage
+    max-width: 100%
+
+  #button
+    position: absolute
+    z-index: 1
+    bottom: 5%
+    background-color: rgba(255, 255, 255, 0.8)
+    font-weight: bold
+
+  #buttonText
+    color: #333
+
+  #codeckimg
+    min-width: 180px
+
+  .info
+    font-size: 18px
+
+  .social-media
+    padding: 0
+
+  .pages
+    padding: 0
+    text-align: center
+
+  .button
+    font-size: 15px
+    padding: 15px 34px
+
+  #button2, #button4
+    padding-left: 32px
+
+  #emptyLine
+    height: 80px
+
+  #communication1
+    padding: 0
+    top: 4%
+
+  #redRowitems
+    display: flex
+    justify-content: center
+    padding: 0
+
+  #communication2
+    padding: 0
+    bottom: 9%
+
+  .logo-content
+    padding: 50px 40px
+
+  .page-items
+    padding: 0
+
+  #redRow
+    display: none
+
+  .digital-experience
+    padding: 50px 40px
+
+    .title, .subtitle
+      text-align: left
+
+  .imageandtext
+    margin-top: 50pt
+
+  .images
+    max-height: 230px
+
+  .imagesMain
+    margin-top: 40px
+
+  .staff
+    justify-content: flex-end
+    height: 310px
+    padding: unset
+    align-items: center
+    flex-direction: column
+
+  .text-area
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    padding: 22px
+    justify-content: center
+
+  .content
+    p.subtitle
+      width: 45%
+
+  .bottomText
+    font-size: 27px
+  .social-media
+    margin-bottom: 20px
+  .privacy
+    font-family: $primary-font
+    font-size: 14px
+  .footer
+    padding: 40px
+    display: flex
+    flex-direction: column
+
+    ul.pages
+      li
+        margin-bottom: 20px
+
+        a
+          font-size: 20px
+          font-family: $primary-font
+  .fullMenu
+    .menuItems
+      span
+        padding: 15px
+        font-size: 28px
+
+    .bottomBar
+      font-size: 18px
+      flex-direction: column
+      text-align: center
+
+      span
+        margin-bottom: 20px
+
+        &:last-child
+          margin-bottom: 0
+  .typedTitle
+    text-align: center
+    margin: 10px 0 10px 0
+    font-size: 24px
+  .space
+    margin-bottom: 40px
+  .see-project
+    position: unset
+    bottom: unset
+  .projects
+    div
+      height: 50vh
+  .cover-image
+    display: none
+  .content
+    p.subtitle
+      width: 100%
+  .nav-fix
+    display: none !important
+  .ourCrew
+    padding: 40px
+
+@media (max-width: 576px)
+  #buttons
+    display: flex
+    flex-direction: column
+  .subtitle
+    font-size: 24px
+  .logo-block, #redRow
+    display: none
+  .description
+    text-align: left
+    margin-top: 40px
+  .fullMenu
+    padding: 0 40px 40px 40px
+
+    .menuItems
+      span
+        padding: 10px
+        font-size: 18px
+
+    .bottomBar
+      font-size: 12px
+  .secondary
+    font-size: 18px
+  .works
+    a
+      font-size: 24px
+  .white-brand
+    display: none
+  .space
+    margin-bottom: 0
+
+@media (max-width: 350px)
+  .fullMenu
+    padding: 0 20px 20px 20px
+
+    .menuItems
+      span
+        &:first-child
+          padding-top: 40px
+
+    .bottomBar
+      span
+        margin-bottom: 10px
+  .content
+    padding: 20px 20px 0 20px
+
+    .first-title
+      font-size: 14px
+      text-align: center
+
+    p.subtitle
+      font-size: 20px
+  .works
+    display: flex
+    justify-content: center
+    margin-bottom: 10px !important
+
+    a
+      font-size: 16px
+      margin-right: 15px
+  h3.subtitle
+    font-size: 16px
+    margin-top: 10px
+    text-align: center
+  .space
+    margin-bottom: 0
+    justify-content: center !important
+
+    img
+      width: 160px
+  .stick-black
+    .stick
+      margin: 0 auto
+
+    .comInfo
+      font-size: 16px
+      margin-bottom: 0
+      text-align: center
+  #codeckimg
+    min-width: 100px !important
+  .hamburger-menu
+    width: 30px
+
+.stickBetween
+  margin: auto
+  width: 91%
+  height: 1px
+  border: 1px solid #EDEDED
+
+.show
+  display: flex !important
+
+.filterDiv
+  display: none
+
+button.active
+  color: white
+  background: $primary-color
+
+.section, .projects
+  height: 100%
+
+
+.content-right
+  height: 100%
+
+@media (max-height: 700px)
+  #boyImage
+    height: 280px
+    width: auto
+
+@import communication
+@import information
+
