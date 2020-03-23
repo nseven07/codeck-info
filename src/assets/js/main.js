@@ -69,7 +69,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
     });
 });
-//---------
+//
 
 //Full Page Slider
 $(document).ready(function () {
@@ -79,7 +79,7 @@ $(document).ready(function () {
             //options here
             autoScrolling: true,
             navigation: true,
-            responsiveHeight: 600,
+            responsiveHeight: 700,
             scrollHorizontally: true,
             scrollBar: true,
             dragAndMove: true,
@@ -87,7 +87,7 @@ $(document).ready(function () {
         });
     }
 });
-//---------
+//
 
 const projectPage = document.getElementById('project-page');
 

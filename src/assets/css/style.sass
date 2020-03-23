@@ -159,7 +159,7 @@ a
 .white-brand
   position: absolute
   right: 80px
-  bottom: 80px
+  top: 80px
 
 .secondary
   color: $secondary-color
@@ -519,6 +519,7 @@ b.descriptive
 
 #hamburgerMenu, #hamburgerMenu-lovergit
   width: 20px
+  float: right
 
 .hamburger-menu-white
   background-color: white !important
@@ -854,10 +855,22 @@ button.active
 .content-right
   height: 100%
 
-@media (max-height: 700px)
+@media (max-height: 768px)
   #boyImage
     height: 280px
     width: auto
+  .half-title
+    font-size: 24px
+  #musavir
+    img
+      height: 130px!important
+  .cover-image
+    img
+      height: 200px!important
+  .see-project
+    position: unset
+  .content-center
+    align-self: center
 
 @import communication
 @import information
