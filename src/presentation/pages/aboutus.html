@@ -125,10 +125,6 @@
         <div><img class="img-fluid" src="../../assets/img/personals/necip.png" alt=""></div>
     </div>
 </div>
-<div class="callToAction">
-    {{ aboutus.tr.contact_us }}
-    <a href="/communication.html" title="{{ aboutus.tr.contact }}">{{ aboutus.tr.contact }} <img src="../../assets/img/arrow-right.svg" alt="">
-    </a>
-</div>
+{% include 'partials/call_to_contact.html' %}
 {% include 'partials/footer_bar.html' %}
 {% endblock %}

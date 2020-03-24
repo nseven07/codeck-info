@@ -5,10 +5,11 @@
 
 <section id="project-page" class="mt-5">
     <div id="buttons" class="content mb-5">
-        <button class="btn" onclick="filterSelection('all')">Tüm Projelerimiz</button>
-        <button id="webApp" class="btn" onclick="filterSelection('web')"> Web Uygulamaları</button>
-        <button id="mobile" class="btn" onclick="filterSelection('mobile')"> Mobil Uygulama</button>
-        <button id="grafiktasarim" class="btn" onclick="filterSelection('graphic')"> Grafik Tasarım</button>
+        <button class="btn btn-active" onclick="filterSelection('all')">Tümü</button>
+        <button id="web" class="btn" onclick="filterSelection('web')">Web</button>
+        <button id="mobile" class="btn" onclick="filterSelection('mobile')">Mobil</button>
+        <button id="design" class="btn" onclick="filterSelection('graphic')">Tasarım</button>
+        <button id="ours" class="btn" onclick="filterSelection('ours')">Bize ait</button>
     </div>
     <div class="container-fluid">
         <div class="mb-2 wow filterDiv web mobile graphic content pb-md-5 pb-sm-3 flex-lg-row flex-md-column flex-sm-column flex-column align-items-center">
@@ -114,7 +115,7 @@
             <!--        <div class="stickBetween mt-lg-5 mt-sm-2"></div>-->
         </div>
         <div class="mb-2 filterDiv stickBetween"></div>
-        <div class="wow filterDiv web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
+        <div class="wow filterDiv ours web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
             <div class="projectTexts col-lg-4 col-md-12 col-sm-12">
                 <h4 class="title wow fadeInDown" data-wow-delay="0.2s">Podbia</h4>
                 <p class="subtitle wow fadeInDown" data-wow-delay="0.4s">Backend geliştirme ve tasarım
@@ -154,7 +155,7 @@
             <!--        <div class="stickBetween mt-lg-5 mt-sm-2"></div>-->
         </div>
         <div class="mb-2 filterDiv stickBetween"></div>
-        <div class="wow filterDiv web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
+        <div class="wow filterDiv ours web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
             <div class="projectTexts col-lg-4 col-md-12 col-sm-12">
                 <h4 class="title wow fadeInDown" data-wow-delay="0.2s">Görsel.co</h4>
                 <p class="subtitle wow fadeInDown" data-wow-delay="0.4s">Backend geliştirme ve tasarım
@@ -204,7 +205,7 @@
             <!--        <div class="stickBetween mt-lg-5 mt-sm-2"></div>-->
         </div>
         <div class="mb-2 filterDiv stickBetween"></div>
-        <div class="wow filterDiv web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
+        <div class="wow filterDiv ours web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
             <div class="projectTexts col-lg-4 col-md-12 col-sm-12">
                 <h4 class="title wow fadeInDown" data-wow-delay="0.2s">İçiniz</h4>
                 <p class="subtitle wow fadeInDown" data-wow-delay="0.4s">Backend geliştirme ve tasarım
@@ -236,10 +237,9 @@
                     </a>
                 </div>
             </div>
-            <!--        <div class="stickBetween mt-lg-5 mt-sm-2"></div>-->
         </div>
         <div class="mb-2 filterDiv stickBetween"></div>
-        <div class="wow filterDiv web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
+        <div class="wow filterDiv ours web graphic content pb-md-5 pb-sm-3 flex-lg-row flex-column align-items-center">
             <div class="projectTexts col-lg-4 col-md-12 col-sm-12">
                 <h4 class="title wow fadeInDown" data-wow-delay="0.2s">Kafeinbox</h4>
                 <p class="subtitle wow fadeInDown" data-wow-delay="0.4s">Backend geliştirme ve tasarım
@@ -326,45 +326,11 @@
                     </a>
                 </div>
             </div>
-            <!--        <div class="stickBetween mt-lg-5 mt-sm-2"></div>-->
         </div>
         <div class="mb-2 filterDiv stickBetween"></div>
     </div>
-    <div class="callToAction">
-        <span><b class="descriptive">Çekinme!</b> Bir şeyler sormak <br>istersen eğer</span>
-        <a href="/communication.html">Bize buradan ulaşabilirsin
-            <img src="../../assets/img/arrow-right.svg" alt=""></a>
-    </div>
-    <div class="footer">
-
-        <div class="social-media d-flex d-md-none">
-            <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-            <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
-                    src="../../assets/img/instagram.svg"
-                    alt=""></a>
-            <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
-                    src="../../assets/img/linkedin.svg"
-                    alt=""></a>
-        </div>
-        <ul class="pages flex-column flex-md-row">
-            <li><a href="/aboutus.html" class="page-items">Hakkımızda</a></li>
-            <li><a href="/projects.html" class="page-items">Projlerimiz</a></li>
-            <li><a href="/communication.html" class="page-items">İletişim</a></li>
-            <li><a href="../../assets/presentation/codeck-sunum.pdf" target="_blank" class="page-items">Şirket
-                Sunumu</a></li>
-        </ul>
-        <div class="social-media d-none d-md-flex">
-            <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-            <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
-                    src="../../assets/img/instagram.svg"
-                    alt=""></a>
-            <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
-                    src="../../assets/img/linkedin.svg"
-                    alt=""></a>
-        </div>
-        <div class="privacy">© 2020 Codeck Tüm Hakları Saklıdır</div>
-
-    </div>
+    {% include 'partials/call_to_contact.html' %}
+    {% include 'partials/footer_bar.html' %}
 </section>
 
 
