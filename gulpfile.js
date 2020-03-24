@@ -85,7 +85,7 @@ function scriptsDev() {
 
 function connectGulp() {
     connect.server({
-        root: [dist + 'templates', 'dist'],
+        root: [dist],
         livereload: true
     });
 }
