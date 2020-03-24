@@ -50,6 +50,13 @@
     ]
   },
   "cssnano": {
-    "preset": "advanced"
+    "preset": [
+      "advanced",
+      {
+        "discardComments": {
+          "removeAll": true
+        }
+      }
+    ]
   }
 }
