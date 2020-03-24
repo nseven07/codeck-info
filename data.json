@@ -1,5 +1,10 @@
 {
   "title": "Codeck | \"The future is in the skies\"",
+  "common": {
+    "tr": {
+
+    }
+  },
   "aboutus": {
     "tr": {
       "heading": "Hayalleri tasarlayan,<br> Web ve Mobil projeler geliştiren,<br>Heyecan dolu <br><b class=\"descriptive\">Bir ekibiz!</b>",
@@ -9,7 +14,17 @@
       "customers": "Müşterilerimiz",
       "customers_description": "Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.",
       "brands": "Markalar",
-      "brands_title": "Ortak ve Sahibi Olduğumuz Markalarımız"
+      "brands_title": "Ortak ve Sahibi Olduğumuz Markalarımız",
+      "digital_experience": "Dijital Deneyim",
+      "digital_experience_subtitle": "Son teknoloji ve tasarım yaklaşımlarını kullanan yenilikçi ekibimizle sunduğumuz hizmetler",
+      "web_mobile": "Web ve Mobil Tasarım Hizmetleri",
+      "backend": "Backend Geliştirme Hizmetleri",
+      "design": "Grafik Tasarım Hizmetleri",
+      "server": "Sunucu Yönetimi ve Bakım Hizmetleri",
+      "team": "Ekibimiz",
+      "team_subtitle": "Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz",
+      "contact_us": "<span><b class=\"descriptive\">Tanışalım!</b> Kahveler Kafeinbox'tan!<br></span>",
+      "contact": "İletişim"
     }
   },
   "projects": {
@@ -52,7 +67,7 @@
     "gorselco": {
       "tr": {
         "title": "Görsel.co",
-        "subtitle": "Kurumlar ve Bireyler için Otomatik Video Hazırlama Saas",
+        "subtitle": "Otomatik Video Hazırlama Saas",
         "description": "Hazır temalar ya da kendi yüklediğiniz tema ile elinizdeki verileri kullanarak otomatik videolar oluşturun",
         "tags": "fikir, tasarım, frontend, backend, db, video otomasyon yazılımları",
         "link": "https://gorsel.co"
@@ -61,8 +76,8 @@
     "musavir": {
       "tr": {
         "title": "Müşavir",
-        "subtitle": "Kobiler için Kurumsal İş Geliştirme Danışmanı",
-        "description": "Kobilere şirketlerini açmadan ya da açtıktan sonra işlerini geliştirmeleri için yapmaları gerekenleri adım adım görevler vererek tamamlatıyoruz. Şirket Açılışı, gerekli Oda ve Kurum kayıtları, şirketlerini ileriye taşımaları için Kobi Eğitimleri,  Otomatik Websitesi ve Marka Oluşturma, E-posta Adresi, Devlet Kurumu Abonelikleri, İş Yönetim Yazılımları, Muhasebe, Personel Kontrol Denetleme Sistemleri, İş Akış Formları ve Dilekçeler, Tedarikçi zincirleri abonelikleri, sanal pazar abonelikleri. Hepsi bir arada ve bir süreliğine ücretsiz!   ",
+        "subtitle": "Kobiler için Akıllı Danışman",
+        "description": "Kobilere şirketlerini açmadan ya da açtıktan sonra işlerini geliştirmeleri için yapmaları gerekenleri adım adım görevler vererek tamamlatıyoruz.  Şirket Açılışı, gerekli Oda ve Kurum kayıtları, şirketlerini ileriye taşımaları için Kobi Eğitimleri,  Otomatik Websitesi ve Marka Oluşturma, E-posta Adresi, Devlet Kurumu Abonelikleri, İş Yönetim Yazılımları, Muhasebe, Personel Kontrol Denetleme Sistemleri, İş Akış Formları ve Dilekçeler, Tedarikçi zincirleri abonelikleri, sanal pazar abonelikleri. Hepsi bir arada ve bir süreliğine ücretsiz!   ",
         "tags": "fikir, proje yönetimi, tasarım, frontend, backend",
         "link": "https://musavir.co"
       }

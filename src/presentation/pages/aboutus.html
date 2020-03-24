@@ -62,7 +62,7 @@
 </div>
 <div class="logo-content flex-column flex-md-row">
     <div class="text-block col-12 col-md-4 d-flex flex-column">
-        <h4 class="title">{{ aboutus.tr.brands }}}</h4>
+        <h4 class="title">{{ aboutus.tr.brands }}</h4>
         <p class="subtitle">{{ aboutus.tr.brands_title }}</p></div>
     <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-md-flex col-sm-12">
         <div class="logo-block row d-md-flex d-sm-none">
@@ -89,33 +89,32 @@
 </div>
 <div class="digital-experience">
     <div class="text-block2">
-        <h4 class="title text-center">Dijital Deneyim</h4>
-        <p class="subtitle text-center">Son teknoloji ve tasarım yaklaşımlarını kullanan yenilikçi ekibimizle
-            sunduğumuz hizmetler.</p>
+        <h4 class="title text-center">{{ aboutus.tr.digital_experience }}</h4>
+        <p class="subtitle text-center">{{ aboutus.tr.digital_experience_subtitle }}</p>
     </div>
     <div class="imagesMain d-flex flex-column flex-md-row">
         <div class="imageandtext col-12 col-md-3">
             <img class="img-fluid" src="../../assets/img/image1@2x.png" alt="">
-            <p class="digital-text">Web ve Mobil Tasarım Hizmetleri</p>
+            <p class="digital-text">{{ aboutus.tr.web_mobile }}</p>
         </div>
         <div class="imageandtext col-12 col-md-3">
             <img class="img-fluid" src="../../assets/img/image2@2x.png" alt="">
-            <p class="digital-text">Backend Geliştirme Hizmetleri</p>
+            <p class="digital-text">{{ aboutus.tr.backend }}</p>
         </div>
         <div class="imageandtext col-12 col-md-3">
             <img class="img-fluid" src="../../assets/img/image3@2x.png" alt="">
-            <p class="digital-text">Grafik Tasarım Hizmetleri</p>
+            <p class="digital-text">{{ aboutus.tr.design }}</p>
         </div>
         <div class="imageandtext col-12 col-md-3">
             <img class="img-fluid" src="../../assets/img/image4@2x.png" alt="">
-            <p class="digital-text">Sunucu Yönetimi ve Bakım Hizmetleri</p>
+            <p class="digital-text">{{ aboutus.tr.server }}</p>
         </div>
     </div>
 </div>
 <div class="ourCrew d-flex flex-lg-row flex-sm-column flex-column">
     <div class="text-area col-lg-4 col-md-12 col-sm-12">
-        <h4 class="title">Ekibimiz</h4>
-        <p class="subtitle">Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz;</p></div>
+        <h4 class="title">{{ aboutus.tr.team }}</h4>
+        <p class="subtitle">{{ aboutus.tr.team_subtitle}}</p></div>
     <div class="staff-slider col-lg-8 col-md-12 col-sm-12 d-flex align-items-center">
         <div><img class="img-fluid" src="../../assets/img/personals/cagdas.png" alt=""></div>
         <div><img class="img-fluid" src="../../assets/img/personals/melek.png" alt=""></div>
@@ -127,39 +126,9 @@
     </div>
 </div>
 <div class="callToAction">
-    <span><b class="descriptive">Çekinme!</b> Bir şeyler sormak <br>istersen eğer</span>
-    <a href="/communication.html">Bize buradan ulaşabilirsin
-        <img src="../../assets/img/arrow-right.svg" alt=""></a>
+    {{ aboutus.tr.contact_us }}
+    <a href="/communication.html" title="{{ aboutus.tr.contact }}">{{ aboutus.tr.contact }} <img src="../../assets/img/arrow-right.svg" alt="">
+    </a>
 </div>
-<div class="footer">
-
-    <div class="social-media d-flex d-md-none">
-        <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
-                src="../../assets/img/instagram.svg"
-                alt=""></a>
-        <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
-                src="../../assets/img/linkedin.svg"
-                alt=""></a>
-    </div>
-    <ul class="pages flex-column flex-md-row">
-        <li><a href="/aboutus.html" class="page-items">Hakkımızda</a></li>
-        <li><a href="/projects.html" class="page-items">Projlerimiz</a></li>
-        <li><a href="/communication.html" class="page-items">İletişim</a></li>
-        <li><a href="../../assets/presentation/codeck-sunum.pdf" target="_blank" class="page-items">Şirket Sunumu</a>
-        </li>
-    </ul>
-    <div class="social-media d-none d-md-flex">
-        <a href="" class="linkimages"><img src="../../assets/img/facebook.svg" alt=""></a>
-        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img
-                src="../../assets/img/instagram.svg"
-                alt=""></a>
-        <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
-                src="../../assets/img/linkedin.svg"
-                alt=""></a>
-    </div>
-    <div class="privacy">© 2020 Codeck Tüm Hakları Saklıdır</div>
-
-</div>
-
+{% include 'partials/footer_bar.html' %}
 {% endblock %}
