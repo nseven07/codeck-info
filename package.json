@@ -8,7 +8,9 @@
   },
   "author": "Necip Seven",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-inject-svg": "^0.1.18"
+  },
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "autoprefixer": "^9.7.4",
