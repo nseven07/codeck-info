@@ -9,14 +9,11 @@
     <div class="row content mt-md-0 mt-sm-5 mt-5">
         <div class="col-md-6 col-sm-12">
             <h4 class="title text-left">Biz Kimiz?</h4>
-            <p class="subtitle text-left" id="subtitleSpecial" style="">Hayalleri tasarlayan,<br> Web ve Mobil projeler
-                geliştiren,<br>Heyecan dolu <br><b class="descriptive">Bir ekibiz!</b>
+            <p class="subtitle text-left" id="subtitleSpecial" style="">{{ aboutus.tr.heading }}
             </p>
         </div>
         <div class="col-md-6 col-sm-12">
-            <p class="description">Hem kurumların hem de bireylerin yaşamlarına dokunup,
-                onları oldukları noktadan teknolojinin imkanlarıyla başka bir hıza ve noktaya ulaştırmak için
-                çalışıyoruz. Teknoloji ve Hız bizim gücümüz.</p>
+            <p class="description">{{ aboutus.tr.description }}</p>
         </div>
     </div>
     <div class="row" id="redRow">
@@ -25,10 +22,10 @@
                 <div class="buttonCircle">
                     <img src="../assets/img/presentation.png" alt="">
                 </div>
-                <p class="buttonText">Şirket Sunumunu İncele</p>
+                <p class="buttonText">{{ aboutus.tr.inspect_presentation }}</p>
             </a>
             <div class="main d-none d-lg-block ">
-                <p class="comInfo">DAHA FAZLA BİLGİ</p>
+                <p class="comInfo">{{ aboutus.tr.more_info }}</p>
                 <div class="stick"></div>
             </div>
         </div>
@@ -38,8 +35,8 @@
 </div>
 <div class="logo-content flex-column flex-md-row">
     <div class="text-block col-12 col-md-4 d-flex flex-column">
-        <h4 class="title">Müşterilerimiz</h4>
-        <p class="subtitle">Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.</p></div>
+        <h4 class="title">{{ aboutus.tr.customers }}</h4>
+        <p class="subtitle">{{ aboutus.tr.customers_description }}</p></div>
     <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-md-flex col-sm-12">
         <div class="logo-block row d-md-flex d-sm-none">
             <img class="col-3" src="../../assets/img/brands/medyas.svg" alt="">
@@ -65,8 +62,8 @@
 </div>
 <div class="logo-content flex-column flex-md-row">
     <div class="text-block col-12 col-md-4 d-flex flex-column">
-        <h4 class="title">Markalarımız</h4>
-        <p class="subtitle">Ortak ve Sahibi Olduğumuz Markalarımız</p></div>
+        <h4 class="title">{{ about.us.brands }}}</h4>
+        <p class="subtitle">{{ brands_title }}</p></div>
     <div class="main-logo-block col-lg-8 col-md-8 align-content-sm-between d-md-flex col-sm-12">
         <div class="logo-block row d-md-flex d-sm-none">
             <img class="col-3" src="../../assets/img/brands/gitmeden-logo.svg" alt="">
