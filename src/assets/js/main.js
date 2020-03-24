@@ -31,7 +31,7 @@ $(document).ready(function () {
 });
 //Slick
 $(document).ready(function () {
-    $('.staff-slider, .projectImages').slick({
+    $('.staff-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
@@ -64,6 +64,41 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.projectImages').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        speed: 300,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $('.mobil-logo').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -139,3 +174,6 @@ if (projectPage) {
     }
 }
 
+setTimeout(() => {
+    $(window).resize()
+}, 500);
