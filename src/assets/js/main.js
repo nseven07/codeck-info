@@ -6,28 +6,12 @@ $('#menuActive').click(function () {
 
 });
 $(document).ready(function () {
-    let pathname, webApp, mobil, grafiktasarim;
+    const datas = window.location.search.replace('?', '').split('=');
+    const target = datas[1];
+    const targetJ = $('#' + target);
+    $('.btn-active').not(targetJ).removeClass('btn-active');
+    targetJ.addClass('btn-active').trigger("click");
 
-    pathname = $(location).attr('href');
-    webApp = pathname === 'http://localhost:8080/projects.html?webApp=true';
-    mobil = pathname === 'http://localhost:8080/projects.html?mobil=true';
-    grafiktasarim = pathname === 'http://localhost:8080/projects.html?grafiktasarim=true';
-
-    if (webApp) {
-        $('#webApp').addClass('btn-active').trigger("click");
-    } else {
-        $('#webApp').removeClass('btn-active');
-    }
-    if (mobil) {
-        $('#mobile').addClass('btn-active').trigger("click");
-    } else {
-        $('#mobile').removeClass('btn-active');
-    }
-    if (grafiktasarim) {
-        $('#grafiktasarim').addClass('btn-active').trigger("click");
-    } else {
-        $('#grafiktasarim').removeClass('btn-active');
-    }
 });
 //Slick
 $(document).ready(function () {
@@ -168,7 +152,9 @@ if (projectPage) {
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
             const current = document.getElementsByClassName("btn-active");
-            current[0].className = current[0].className.replace(" btn-active", "");
+            if (current.length) {
+                current[0].className = current[0].className.replace(" btn-active", "");
+            }
             this.className += " btn-active";
         });
     }

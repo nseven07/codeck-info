@@ -1,5 +1,32 @@
 {
   "title": "Codeck | \"The future is in the skies\"",
+  "common": {
+    "tr": {
+
+    }
+  },
+  "aboutus": {
+    "tr": {
+      "heading": "Hayalleri tasarlayan,<br> Web ve Mobil projeler geliştiren,<br>Heyecan dolu <br><b class=\"descriptive\">Bir ekibiz!</b>",
+      "description": "Kurumların ve bireylerin yaşamlarına dokunup, onları bizimle tanıştıkları andan itibaren başka bir hıza ve noktaya taşımak için çalışıyoruz. \nTeknoloji ve Hız bizim gücümüz.",
+      "inspect_presentation": "Şirket Sunumu İncele",
+      "more_info": "Daha fazla bilgi",
+      "customers": "Müşterilerimiz",
+      "customers_description": "Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.",
+      "brands": "Markalar",
+      "brands_title": "Ortak ve Sahibi Olduğumuz Markalarımız",
+      "digital_experience": "Dijital Deneyim",
+      "digital_experience_subtitle": "Son teknoloji ve tasarım yaklaşımlarını kullanan yenilikçi ekibimizle sunduğumuz hizmetler",
+      "web_mobile": "Web ve Mobil Tasarım Hizmetleri",
+      "backend": "Backend Geliştirme Hizmetleri",
+      "design": "Grafik Tasarım Hizmetleri",
+      "server": "Sunucu Yönetimi ve Bakım Hizmetleri",
+      "team": "Ekibimiz",
+      "team_subtitle": "Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz",
+      "contact_us": "<span class=\"wow fadeInUp\" data-wow-delay=\"0.6s\"><b class=\"descriptive\">Tanışalım!</b> Kahveler Kafeinbox'tan!<br></span>",
+      "contact": "İletişim"
+    }
+  },
   "projects": {
     "ahtapot": {
       "tr": {
@@ -40,7 +67,7 @@
     "gorselco": {
       "tr": {
         "title": "Görsel.co",
-        "subtitle": "Kurumlar ve Bireyler için Otomatik Video Hazırlama Saas",
+        "subtitle": "Otomatik Video Hazırlama Saas",
         "description": "Hazır temalar ya da kendi yüklediğiniz tema ile elinizdeki verileri kullanarak otomatik videolar oluşturun",
         "tags": "fikir, tasarım, frontend, backend, db, video otomasyon yazılımları",
         "link": "https://gorsel.co"
@@ -49,9 +76,9 @@
     "musavir": {
       "tr": {
         "title": "Müşavir",
-        "subtitle": "Kobile için Kurumsal İş Geliştirme Danışmanı",
-        "description": "",
-        "tags": "fikir, tasarım, frontend, backend",
+        "subtitle": "Kobiler için Akıllı Danışman",
+        "description": "Kobilere şirketlerini açmadan ya da açtıktan sonra işlerini geliştirmeleri için yapmaları gerekenleri adım adım görevler vererek tamamlatıyoruz.  Şirket Açılışı, gerekli Oda ve Kurum kayıtları, şirketlerini ileriye taşımaları için Kobi Eğitimleri,  Otomatik Websitesi ve Marka Oluşturma, E-posta Adresi, Devlet Kurumu Abonelikleri, İş Yönetim Yazılımları, Muhasebe, Personel Kontrol Denetleme Sistemleri, İş Akış Formları ve Dilekçeler, Tedarikçi zincirleri abonelikleri, sanal pazar abonelikleri. Hepsi bir arada ve bir süreliğine ücretsiz!   ",
+        "tags": "fikir, proje yönetimi, tasarım, frontend, backend",
         "link": "https://musavir.co"
       }
     },
@@ -60,7 +87,35 @@
         "title": "Kafeinbox",
         "subtitle": "Türkiyenin İlk Online Kahve Eğitim ve Abonelik Platformu!",
         "description": "Her hafta taze kahveler ve tüm 3.nesil demleme ekipmanları",
-        "tags": "fikir, proje planlaması,  tasarım, frontend, backend, kutu tasarımları, eğitim planlaması"
+        "tags": "fikir, proje planlaması,  tasarım, frontend, backend, kutu tasarımları, eğitim planlaması",
+        "link": "https://kafeinbox.com"
+      }
+    },
+    "adekstra": {
+      "tr": {
+        "title": "Adekstra",
+        "subtitle": "Reklam ve Analiz Platformu",
+        "description": "Web, Mobil, TV ve DOOH alanlarında Reklam Yönetimi, Raporlama, Mecra yönetimi, İçerik yönetimi, Kullanıcı Analizi, Uygulama Analizi, Üçüncü Parti Reklam Mecralarındaki Reklamları tek kanaldan yönetebilme",
+        "tags": "fikir, proje planlaması, tasarım, frontend, backend, tv uygulamaları",
+        "link": "https://adekstra.com"
+      }
+    },
+    "iciniz": {
+      "tr": {
+        "title": "İçiniz",
+        "subtitle": "Online İçecek Pazaryeri",
+        "description": "Fonksiyonel İçecek Pazaryeri",
+        "tags": "fikir, proje planlaması, tasarım, frontend, backend",
+        "link": "https://iciniz.com"
+      }
+    },
+    "gitmeden": {
+      "tr": {
+        "title": "Gitmeden",
+        "subtitle": "Gayrimenkul Değerleme Randevu Sistemi",
+        "description": "İstediğiniz Gayrimenkul için Değerleme Uzmanlarımız sizin adınıza incelemeyi yapıp, inceleme sırasında Görüntülü Konuşma ve Mesajlaşma ile size gayrimenkulu tanıtsın,  tüm detayları video, fotoğraf, basılı ve dijital rapor olarak iletsin.",
+        "tags": "proje planlaması, tasarım, frontend, backend, mobil uygulama geliştirme, sistem desteği",
+        "link": "https://iciniz.com"
       }
     }
   }

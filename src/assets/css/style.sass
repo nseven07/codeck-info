@@ -16,7 +16,7 @@ $forth-color: #AA0BFF
   font-style: normal
 
 nav, .content
-  padding: 40px 80px 0 80px
+  padding: 40px 60px 0 60px
 
 body
   min-width: 320px
@@ -192,7 +192,7 @@ a
 .description
   font-family: $secondary-font
   color: $secondary-color
-  font-size: 18px
+  font-size: 21px
   font-weight: 300
   text-align: right
   line-height: 40px
@@ -441,8 +441,6 @@ b.descriptive
   a
     text-align: center
     color: #030303
-    display: flex
-    flex-direction: column
     margin: 0 0 30px 0
 
 .images
@@ -854,6 +852,12 @@ button.active
 .section, .projects
   height: 100%
 
+.projects
+  .content
+    p,span
+      max-width: 50%
+
+
 
 .content-right
   height: 100%
@@ -875,6 +879,8 @@ button.active
   .content-center
     align-self: center
 
+.description-small
+  font-size: 12px
 @import communication
 @import information
 
