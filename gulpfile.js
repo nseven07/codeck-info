@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-
+const fs = require('fs')
 
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
@@ -17,7 +17,7 @@ const uglify = require('gulp-uglify-es').default;
 const open = require('gulp-open');
 const header = require('gulp-header');
 const imagemin = require('gulp-imagemin');
-
+const data = require('gulp-data');
 const templates = './src/presentation/';
 const dist = './dist/';
 const homePath = './src/assets/';
@@ -25,6 +25,7 @@ const nodeModules = './node_modules/';
 const js = 'assets/js/  ';
 const css = 'assets/css/';
 const icons = 'assets/icons/';
+const foreach = require('gulp-foreach');
 
 
 const sourceJs = [
@@ -43,11 +44,14 @@ const sourceSass = [
     homePath + "css/style.sass"
 ];
 
+const dataSource = require('./data');
+
 function compile() {
-    const twig = require('gulp-twig');
     return gulp.src('./src/presentation/pages/*.html')
-        .pipe(twig({
-            base: './src/presentation'
+        .pipe(data(dataSource))
+        .pipe(foreach(function (stream, file) {
+            return stream
+                .pipe(twig({base: './src/presentation'}))
         }))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());

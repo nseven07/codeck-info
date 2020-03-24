@@ -1,0 +1,67 @@
+{
+  "title": "Codeck | \"The future is in the skies\"",
+  "projects": {
+    "ahtapot": {
+      "tr": {
+        "title": "Akıllı Ahtapot",
+        "subtitle": "Teşvik Hesaplama Web Yazılımı",
+        "tags": "kurumsal kimlik, tasarım, yazılım projesi planlama, frontend ve backend geliştirmeleri, sistem bakım ve yönetim desteği",
+        "description": "SGK Cari Dönem ve Geçmiş Dönem Devlet Teşvikleri Hesaplama Yazılımı",
+        "link": "https://akilliahtapot.com"
+      }
+    },
+    "bmsumer": {
+      "tr": {
+        "title": "BM Sumer Liquefaction Calculator",
+        "subtitle": "Sıvılaşma Hesaplama Web ve Mobil Uygulaması",
+        "tags": "saas yazılım projesi planlama, matlab-docker-python entegrasyonu, web ve mobil uygulama geliştirme, tasarım çalışmaları ",
+        "description": "Matlab üzerinden hazırlanmış formüllerin web ve mobil platformlar üzerinde abonelik modeli ile satışa sunulması",
+        "link": "https://liquefaction.bmsumer.com"
+      }
+    },
+    "hamidiye": {
+      "tr": {
+        "title": "Hamidiye Sipariş Uygulamaları",
+        "subtitle": "Müşteri Bayi Mobil ve Web Uygulamaları",
+        "tags": "tasarım, mobile ve web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
+        "description": "Ürün siparişi müşteri ve bayi taraflı sipariş sistemi ile tüm satış öncesi, satış ve sonrası kurguları",
+        "link": "https://onlinesiparis.hamidiye.istanbul"
+      }
+    },
+    "podbia": {
+      "tr": {
+        "title": "Podbia Podcast",
+        "subtitle": "Türkiye\nin ilk Podcast Uygulaması!",
+        "tags": "tasarım desteği, web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
+        "description": "Podcast Dinleme, Takip Etme, Özel Podcast İçeriklerine Erişme, Podcastlerden bildirim alma",
+        "link": "https://podbia.com"
+      }
+    },
+    "gorselco": {
+      "tr": {
+        "title": "Görsel.co",
+        "subtitle": "Kurumlar ve Bireyler için Otomatik Video Hazırlama Saas",
+        "description": "Hazır temalar ya da kendi yüklediğiniz tema ile elinizdeki verileri kullanarak otomatik videolar oluşturun",
+        "tags": "fikir, tasarım, frontend, backend, db, video otomasyon yazılımları",
+        "link": "https://gorsel.co"
+      }
+    },
+    "musavir": {
+      "tr": {
+        "title": "Müşavir",
+        "subtitle": "Kobile için Kurumsal İş Geliştirme Danışmanı",
+        "description": "",
+        "tags": "fikir, tasarım, frontend, backend",
+        "link": "https://musavir.co"
+      }
+    },
+    "kafeinbox": {
+      "tr": {
+        "title": "Kafeinbox",
+        "subtitle": "Türkiyenin İlk Online Kahve Eğitim ve Abonelik Platformu!",
+        "description": "Her hafta taze kahveler ve tüm 3.nesil demleme ekipmanları",
+        "tags": "fikir, proje planlaması,  tasarım, frontend, backend, kutu tasarımları, eğitim planlaması"
+      }
+    }
+  }
+}
