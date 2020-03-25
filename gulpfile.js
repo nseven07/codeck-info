@@ -131,7 +131,7 @@ function myWatchTasks() {
 }
 
 const dev = gulp.parallel(gulp.series(clean, style, copyFiles, scriptsDev, compile, injectSVG, connectGulp), myWatchTasks);
-const build = gulp.series(clean, style, copyFiles, scripts, compile,);
+const build = gulp.series(clean, style, copyFiles, scripts, compile, injectSVG);
 
 
 exports.clean = clean;
