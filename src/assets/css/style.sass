@@ -525,6 +525,7 @@ b.descriptive
   background-color: white !important
 
 .cover-image
+  width: 45%
   position: absolute
   z-index: 20
   left: 100%
@@ -533,9 +534,10 @@ b.descriptive
 .ahtapot-phone
   height: 580px
 
-#b-mockup
-  transform: rotate(-20deg)
-  height: 580px
+#mockup
+  display: flex
+  justify-content: center
+  height: 60%
 
 h3.subtitle
   font-weight: 800
@@ -573,12 +575,10 @@ h3.subtitle
   .headTextRight
     align-items: flex-end
   .content
-    .cover-image
-      img
-        height: 320px
-
     p.subtitle
       font-size: 24px
+  #mockup
+    height: 40%
 
 @media screen and (max-width: 768px)
   body
@@ -746,7 +746,7 @@ h3.subtitle
     div
       height: 50vh
   .cover-image
-    display: none
+    display: none!important
   .content
     p.subtitle
       width: 100%
