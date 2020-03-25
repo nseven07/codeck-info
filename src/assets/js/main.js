@@ -160,6 +160,16 @@ if (projectPage) {
     }
 }
 
+const params = {
+    container: document.getElementById('spaceanimation'),
+    path: './assets/animations/space.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+};
+
+const anim = lottie.loadAnimation(params);
+
 setTimeout(() => {
     $(window).resize()
 }, 500);
