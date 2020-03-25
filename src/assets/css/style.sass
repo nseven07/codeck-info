@@ -526,7 +526,7 @@ b.descriptive
   background-color: white !important
 
 .cover-image
-  width: 45%
+  width: 35%
   position: absolute
   z-index: 20
   left: 100%
@@ -538,7 +538,8 @@ b.descriptive
 #mockup
   display: flex
   justify-content: center
-  height: 60%
+  #b-mockup
+    max-width: 350px
 
 h3.subtitle
   font-weight: 800
@@ -548,6 +549,8 @@ h3.subtitle
   font-size: 26px
 
 @media screen and (max-width: 1200px)
+  #b-mockup
+    width: 200px
   .btn
     font-size: 18px
     margin-right: 10px
@@ -576,8 +579,7 @@ h3.subtitle
   .content
     p.subtitle
       font-size: 24px
-  #mockup
-    height: 40%
+
 
 @media screen and (max-width: 768px)
   body
