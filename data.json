@@ -2,7 +2,11 @@
   "title": "Codeck | \"The future is in the skies\"",
   "common": {
     "tr": {
-
+    }
+  },
+  "home": {
+    "tr": {
+      "what_do_we_do": "Neler yapıyoruz?"
     }
   },
   "aboutus": {
@@ -10,6 +14,7 @@
       "heading": "Hayalleri tasarlayan,<br> Web ve Mobil projeler geliştiren,<br>Heyecan dolu <br><b class=\"descriptive\">Bir ekibiz!</b>",
       "description": "Kurumların ve bireylerin yaşamlarına dokunup, onları bizimle tanıştıkları andan itibaren başka bir hıza ve noktaya taşımak için çalışıyoruz. \nTeknoloji ve Hız bizim gücümüz.",
       "inspect_presentation": "Şirket Sunumu İncele",
+      "who_are_us": "Biz Kimiz?",
       "more_info": "Daha fazla bilgi",
       "customers": "Müşterilerimiz",
       "customers_description": "Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.",
