@@ -6,7 +6,16 @@
   },
   "home": {
     "tr": {
-      "what_do_we_do": "Neler yapıyoruz?"
+      "what_do_we_do": "Neler yapıyoruz?",
+      "together": "Birlikteyiz",
+      "we_are_here": "Buradayız.",
+      "technology": "Teknolojinin getirdiği imkanları ve kolaylıkları çevremize sunabilmek için",
+      "we_are_working" : "çalışıyoruz",
+      "mobile": "Mobil",
+      "design" : "Grafik Tasarım",
+      "projects" : "PROJELERİMİZ",
+      "view_project" : "Projeyi İncele"
+
     }
   },
   "aboutus": {
@@ -33,6 +42,14 @@
     }
   },
   "projects": {
+    "main": {
+      "tr":{
+        "all": "Tümü",
+        "web": "Web",
+        "graphic" : "Tasarım",
+        "belong_to_us" : "Bize Ait"
+      }
+    },
     "ahtapot": {
       "tr": {
         "title": "Akıllı Ahtapot",
@@ -122,6 +139,12 @@
         "tags": "proje planlaması, tasarım, frontend, backend, mobil uygulama geliştirme, sistem desteği",
         "link": "https://iciniz.com"
       }
+    }
+  },
+  "communication": {
+    "tr": {
+      "directions": "Adres Tarifi Al",
+      "call_now": "Hemen Ara"
     }
   }
 }

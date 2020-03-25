@@ -9,10 +9,10 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h1 class="typedTitle wow fadeInDown">
                         Yeniyiz, <br>
-                        <b class="descriptive">Birlikteyiz</b> Buradayız.
+                        <b class="descriptive">{{ home.tr.together }}</b> {{ home.tr.we_are_here }}
                     </h1>
                     <h3 class="subtitle wow fadeInDown" data-wow-delay="0.4s">
-                        Teknolojinin getirdiği imkanları ve kolaylıkları çevremize sunabilmek için <b class="descriptive">çalışıyoruz</b>.
+                        {{ home.tr.technology }} <b class="descriptive">{{ home.tr.we_are_working }}</b>.
                     </h3>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -30,12 +30,12 @@
                     </h4>
                     <div class="works mb-4 wow fadeInDown" data-wow-delay="1.4s">
                         <a href="/projects.html?filter=web">Web</a>
-                        <a href="/projects.html?filter=mobile">Mobil</a>
-                        <a href="/projects.html?filter=design">Grafik Tasarım</a>
+                        <a href="/projects.html?filter=mobile">{{ home.tr.mobile }}</a>
+                        <a href="/projects.html?filter=design">{{ home.tr.design }}</a>
                     </div>
                 </div>
                 <div class="d-lg-block stick-black">
-                    <p class="comInfo wow fadeInDown" data-wow-delay="1.7s">PROJELERİMİZ</p>
+                    <p class="comInfo wow fadeInDown" data-wow-delay="1.7s">{{ home.tr.projects }}</p>
                     <div class="stick wow fadeInDown" data-wow-delay="1.7s"></div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.ahtapot.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.ahtapot.tr.link }}" style="color:#AA0BFF">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.ahtapot.tr.link }}" style="color:#AA0BFF">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right  p-0 d-flex justify-content-center col-md-6">
@@ -79,7 +79,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.hamidiye.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-                    <a target="_blank" href="{{ projects.hamidiye.tr.link }}" style="color:#E52A7E">Projeyi İncele</a>
+                    <a target="_blank" href="{{ projects.hamidiye.tr.link }}" style="color:#E52A7E">{{ home.tr.view_project }}</a>
                 </span>
             </div>
             <div class="content-right  p-0 d-flex justify-content-center col-md-6">
@@ -103,7 +103,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.podbia.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-                    <a target="_blank" href="{{ projects.podbia.tr.link }}" style="color:#FD0069">Projeyi İncele</a>
+                    <a target="_blank" href="{{ projects.podbia.tr.link }}" style="color:#FD0069">{{ home.tr.view_project }}</a>
                 </span>
             </div>
             <div class="content-right  p-0 d-flex justify-content-center col-md-6">
@@ -128,7 +128,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.bmsumer.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.bmsumer.tr.link }}" style="color:#1C7EDD">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.bmsumer.tr.link }}" style="color:#1C7EDD">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -153,7 +153,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.gorselco.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.gorselco.tr.link }}" style="color:#E74C3C">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.gorselco.tr.link }}" style="color:#E74C3C">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -178,7 +178,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.musavir.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.musavir.tr.link }}" style="color:#225CFF">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.musavir.tr.link }}" style="color:#225CFF">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -202,7 +202,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.kafeinbox.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.kafeinbox.tr.link }}" style="color:#EA2E32">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.kafeinbox.tr.link }}" style="color:#EA2E32">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -227,7 +227,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.adekstra.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.adekstra.tr.link }}" style="color:#225CFF">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.adekstra.tr.link }}" style="color:#225CFF">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -252,7 +252,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.iciniz.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-            <a target="_blank" href="{{ projects.iciniz.tr.link }}" style="color:#F2B231">Projeyi İncele</a>
+            <a target="_blank" href="{{ projects.iciniz.tr.link }}" style="color:#F2B231">{{ home.tr.view_project }}</a>
         </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
@@ -277,7 +277,7 @@
                 <span class="tags wow fadeInDown"
                       data-wow-delay="0.6s">{{ projects.gitmeden.tr.tags }}</span>
                 <span class="see-project col-lg-6 d-flex wow fadeInDown" data-wow-delay="0.8s">
-                    <a target="_blank" href="{{ projects.gitmeden.tr.link }}" style="color:#F16721">Projeyi İncele</a>
+                    <a target="_blank" href="{{ projects.gitmeden.tr.link }}" style="color:#F16721">{{ home.tr.view_project }}</a>
                 </span>
             </div>
             <div class="content-right p-0 d-flex justify-content-center col-md-6">
