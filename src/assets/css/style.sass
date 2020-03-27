@@ -22,6 +22,57 @@ body
   min-width: 320px
   overflow-x: hidden
 
+.fullMenu
+  display: none
+
+  .menu-button
+    display: none
+    transition: 0.8s ease
+
+  &:after
+    height: 0
+
+body.opened
+  overflow-y: hidden !important
+
+  .fullMenu
+    display: flex
+    position: fixed
+    width: 100%
+    flex-direction: column
+    padding: 40px
+    height: 100vh
+    z-index: 9999
+
+    .menu-button
+      display: flex
+      justify-content: flex-end
+      position: relative
+      right: 36px
+      top: 16px
+
+
+      .menu-close
+        background-color: white
+        width: 20px
+        height: 5px
+        padding: 0
+        margin: 0
+        outline: none
+        border: none
+
+    &:after
+      content: ""
+      animation: fadeIn 0.8s ease
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      background-color: rgba(226, 32, 0, 0.96)
+      height: 100vh
+      display: flex
+      z-index: -1
+
 a
   transition: 0.8s ease
 
@@ -36,29 +87,6 @@ a
 #codeckimg, .hamburger-menu
   z-index: 25
   position: relative
-
-.fullMenu
-  visibility: visible
-  display: flex
-  position: absolute
-  width: 100%
-  height: 100vh
-  left: 0
-  top: 0
-  flex-direction: column
-  justify-content: space-between
-  padding: 0 80px 40px 80px
-  z-index: 20
-
-  &:before
-    position: absolute
-    width: 100%
-    left: 0
-    z-index: -1
-    content: ""
-    height: 0
-    transition: all .35s ease
-    background: $primary-color
 
 .hidden
   visibility: hidden
@@ -538,6 +566,7 @@ b.descriptive
 #mockup
   display: flex
   justify-content: center
+
   #b-mockup
     max-width: 350px
 
@@ -547,6 +576,14 @@ h3.subtitle
   font-family: $secondary-font
   color: $tertiary-color
   font-size: 26px
+
+@media screen and (max-width: 1400px)
+  .menuItems
+    span
+      font-size: 30px
+      padding: 20px
+  .logo-content
+    padding: 130px 40px 80px 40px
 
 @media screen and (max-width: 1200px)
   #b-mockup
@@ -584,6 +621,22 @@ h3.subtitle
 @media screen and (max-width: 768px)
   body
     overflow-x: hidden !important
+  .projects
+    .content
+      padding-top: 0
+  .menu-button
+    right: 0!important
+    top: 0!important
+  .menuItems
+    span
+      padding: 12px
+      font-size: 24px
+  .bottomBar
+    flex-direction: column
+    text-align: center
+    span
+      padding: 10px
+      font-size: 16px
 
   nav, .content
     padding: 20px 40px 0 40px
@@ -717,11 +770,6 @@ h3.subtitle
         a
           font-size: 20px
           font-family: $primary-font
-  .fullMenu
-    .menuItems
-      span
-        padding: 15px
-        font-size: 28px
 
     .bottomBar
       font-size: 18px
@@ -743,10 +791,13 @@ h3.subtitle
     position: unset
     bottom: unset
   .projects
-    div
-      height: 50vh
+    .content-center
+      height: 65vh
+
+    .content-right
+      height: 35vh
   .cover-image
-    display: none!important
+    display: none !important
   .content
     p.subtitle
       width: 100%
@@ -766,8 +817,6 @@ h3.subtitle
   .description
     text-align: left
     margin-top: 40px
-  .fullMenu
-    padding: 0 40px 40px 40px
 
     .menuItems
       span
@@ -787,17 +836,7 @@ h3.subtitle
     margin-bottom: 0
 
 @media (max-width: 350px)
-  .fullMenu
-    padding: 0 20px 20px 20px
 
-    .menuItems
-      span
-        &:first-child
-          padding-top: 40px
-
-    .bottomBar
-      span
-        margin-bottom: 10px
   .content
     padding: 20px 20px 0 20px
 

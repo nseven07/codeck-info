@@ -1,10 +1,7 @@
-$('#menuActive').click(function () {
-    $('.fullMenu, .menuItems').toggleClass("menu-btn-active");
-    $('.fullMenu').toggleClass('hidden');
-    $('#hamburgerMenu').toggleClass("menu-active");
-    $('#menuActive').addClass('kapat')
-
+$('#menuActive, .menu-close').click(function () {
+    $('body').toggleClass("opened");
 });
+
 $(document).ready(function () {
     const datas = window.location.search.replace('?', '').split('=');
     const target = datas[1];
@@ -86,6 +83,31 @@ $(document).ready(function () {
     $('.mobil-logo').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });
 //
@@ -98,7 +120,7 @@ $(document).ready(function () {
             //options here
             autoScrolling: true,
             navigation: true,
-            responsiveHeight: 700,
+            responsiveHeight: 600,
             scrollHorizontally: true,
             scrollBar: true,
             dragAndMove: true,
