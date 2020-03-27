@@ -11,6 +11,9 @@ $(document).ready(function () {
 
 });
 //Slick
+
+
+
 $(document).ready(function () {
     $('.staff-slider').slick({
         slidesToShow: 3,

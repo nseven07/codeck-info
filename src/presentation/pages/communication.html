@@ -1,44 +1,45 @@
 {% extends "layouts/layout.index.html" %}
 {% block content %}
-<div class="mainDiv">
-<section>
-    <div class="topSide">
-        <div class="infoBlock">
-        <div class="info">
-            <h1>Sarıyer - Kolektif House</h1>
-            <h2>Maslak Mah. Aos 55. Sk. 42 Maslak No: 4 İç Kapı No: 556</h2>
-            <a href="mailto:info@codeck.com.tr">info@codeck.com.tr</a>
-            <a href="tel:+90 (212) 242 36 24">+90 (212) 242 36 24</a>
-            <div class="buttons d-flex justify-content-center justify-content-lg-start">
-                <a target="_blank"
-                   href="https://www.google.com.tr/maps/place/Kolektif+House+Maslak/@41.1123195,29.0192814,18.5z/data=!4m5!3m4!1s0x14cab5a10e9dca99:0x61175a3501778!8m2!3d41.112412!4d29.019664?hl=tr">
-                    <div class="button pt-3 text-white wow fadeInLeft" data-wow-delay="0.2s">{{ communication.tr.directions }}</div>
-                </a>
-                <a href="tel:+90 (212) 242 36 24">
-                    <div class="button pt-3 ml-3 text-white wow fadeInLeft" data-wow-delay="0.3s">{{ communication.tr.call_now }}</div>
-                </a>
-            </div>
+<section class="communication">
+    {% include 'partials/nav.html' %}
+    <div class="info">
+        <h1>Sarıyer - Kolektif House</h1>
+        <h2>Maslak Mah. Aos 55. Sk. 42 Maslak No: 4 İç Kapı No: 556</h2>
+        <a href="mailto:info@codeck.com.tr">info@codeck.com.tr</a>
+        <a href="tel:+90 (212) 242 36 24">+90 (212) 242 36 24</a>
+        <div class="buttons d-flex justify-content-center justify-content-lg-start">
+            <a target="_blank"
+               href="https://www.google.com.tr/maps/place/Kolektif+House+Maslak/@41.1123195,29.0192814,18.5z/data=!4m5!3m4!1s0x14cab5a10e9dca99:0x61175a3501778!8m2!3d41.112412!4d29.019664?hl=tr">
+                <div class="button pt-3 text-white wow fadeInLeft" data-wow-delay="0.2s">{{
+                    communication.tr.directions }}
+                </div>
+            </a>
+            <a href="tel:+90 (212) 242 36 24">
+                <div class="button pt-3 ml-3 text-white wow fadeInLeft" data-wow-delay="0.3s">{{
+                    communication.tr.call_now }}
+                </div>
+            </a>
         </div>
-        </div>
-        <div class="infoBlock2">
-            <div class="info2 ">
-            <h1>Sarıyer - Merkez</h1>
-            <h2>Yeni mahalle caddesi, No. 9, Kat 3, Daire 3</h2>
-            <a href="mailto:info@codeck.com.tr">info@codeck.com.tr</a>
-            <a href="tel:‭+90 (544) 565 18 85‬">‭+90 (544) 565 18 85‬</a>
-            <div id="buttonsDown" class="buttons d-flex justify-content-center justify-content-lg-start">
-                <a target="_blank"
-                   href="https://www.google.com.tr/maps/place/Kolektif+House+Maslak/@41.1123195,29.0192814,18.5z/data=!4m5!3m4!1s0x14cab5a10e9dca99:0x61175a3501778!8m2!3d41.112412!4d29.019664?hl=tr">
-                    <div class="button pt-3 text-white wow fadeInLeft" data-wow-delay="0.2s">{{ communication.tr.directions }}</div>
-                </a>
-                <a href="tel:+90 (212) 242 36 24">
-                    <div class="button pt-3 ml-3 text-white wow fadeInLeft" data-wow-delay="0.3s">{{ communication.tr.call_now }}</div>
-                </a>
-            </div>
-            </div>
+    </div>
+    <div class="info2 ">
+        <h1>Sarıyer - Merkez</h1>
+        <h2>Yeni mahalle caddesi, No. 9, Kat 3, Daire 3</h2>
+        <a href="mailto:info@codeck.com.tr">info@codeck.com.tr</a>
+        <a href="tel:‭+90 (544) 565 18 85‬">‭+90 (544) 565 18 85‬</a>
+        <div id="buttonsDown" class="buttons d-flex justify-content-center justify-content-lg-start">
+            <a target="_blank"
+               href="https://www.google.com.tr/maps/place/Kolektif+House+Maslak/@41.1123195,29.0192814,18.5z/data=!4m5!3m4!1s0x14cab5a10e9dca99:0x61175a3501778!8m2!3d41.112412!4d29.019664?hl=tr">
+                <div class="button pt-3 text-white wow fadeInLeft" data-wow-delay="0.2s">{{
+                    communication.tr.directions }}
+                </div>
+            </a>
+            <a href="tel:+90 (212) 242 36 24">
+                <div class="button pt-3 ml-3 text-white wow fadeInLeft" data-wow-delay="0.3s">{{
+                    communication.tr.call_now }}
+                </div>
+            </a>
         </div>
     </div>
 </section>
-</div>
 
 {% endblock %}
