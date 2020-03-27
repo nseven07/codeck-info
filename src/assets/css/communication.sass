@@ -1,15 +1,3 @@
-.title-text
-  font-weight: bold
-  font-size: 40px
-  line-height: 100%
-  font-family: Roboto, sans-serif
-
-#title-text-span
-  color: #E22000
-  padding: 0 12px
-
-.mediaIcons
-  margin: 0 5px
 
 .button, #button
   transition: 0.8s cubic-bezier(0, 0.38, 0, 1)
@@ -46,29 +34,10 @@ a#button:hover
   border-radius: 50%
   background: #fff
 
-#backgroundImage
-  background-size: cover
-  background-image: url(../img/communication/background.png)
-  position: absolute
-  width: 100%
-  background-position: center
-  height: 100%
-
-#boyColumn
-  height: 45%
-  right: 0
-
-.button-img
-  position: relative
-  top: 5px
-  left: 5px
 
 a:hover
   text-decoration: none
 
-.info
-  font-size: 20px
-  font-weight: 200
 
 .button
   background: rgba(255, 255, 255, 0.3)
@@ -79,139 +48,74 @@ a:hover
 #button2, #button4
   width: 190px
 
-#emptyLine
-  height: 100px
-  background: white
-
-#communication1
-  position: absolute
-  top: 8%
-  padding: 0 80px
-
-#communication2
-  position: absolute
-  right: 0
-  bottom: 10%
-  padding: 0 80px
-
-#redRowitems
-  padding: 0 0 80px 80px
-
-#mainContent
+.topSide
   display: flex
   flex-direction: column
-  height: 100vh
   justify-content: space-between
 
-#mainContentinner
-  padding: 50px 80px 0 80px
+section
+  background-image: url("../img/communication/background.png")
+  background-size: cover
 
-#bottomColor
-  height: 10%
-  position: absolute
-  bottom: 0
-  background: #D11E00
+.info
+  display: flex
+  flex-direction: column
 
-#titleMain
-  padding: 80px
-
-.loader-img
-  position: absolute
-  margin: auto
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  width: 50%
-  height: auto
-
-#loader
-  background: #fff
-  position: absolute
-  z-index: 1
-  align-content: flex-end
-  flex-direction: row
-  display: block
-  width: 100%
-  height: 100vh
-
-.title2, .title
-  font-family: all-round-gothic, sans-serif
-  font-weight: 600
-
-.stick
-  height: 50px
-  width: 2px
-  background: #fff
-
-.comInfo
-  font-size: 18px
-  color: #fff
-
-.main
-  position: absolute
-  bottom: 0
-  z-index: 1
-
-@media screen and (min-width: 1500px)
-  .info
+  a
+    font-family: $secondary-font
     font-size: 30px
-
-@media screen and (max-width: 768px)
-  #boyImage
-    max-width: 100%
-
-  #button
-    position: absolute
-    z-index: 1
-    bottom: 5%
-    background-color: rgba(255, 255, 255, 0.8)
-    font-weight: bold
-
-  #buttonText
-    color: #333
-
-  #codeckimg
-    min-width: 180px
-
-  #textitem1, #textitem2
-    font-size: 30px
+    color: #ffffff
     margin: 0
 
-  #title-text-span
-    color: #E22000
-    padding: 0 12px
-    font-size: 47px
-    margin-bottom: 6px
 
-  .info
-    font-size: 18px
-
-  .button
-    font-size: 15px
-    padding: 15px 34px
-
-  #button2, #button4
-    padding-left: 32px
-
-  #emptyLine
-    height: 80px
-
-  #communication1
-    padding: 0
-    top: 4%
-
-  #communication2
-    padding: 0
-    bottom: 9%
-
-  #titleMain
-    padding: 0
-
-  #mainContentinner
-    padding: 50px 50px 0 50px
-
-  #textitem3
+  h1
+    font-family: $secondary-font
     font-size: 30px
-    padding-left: 10px
-    margin-bottom: 5px
+    color: #ffffff
+    font-weight: 600
+    margin: 0
+  h2
+    font-family: $secondary-font
+    font-size: 30px
+    color: #ffffff
+    margin: 0
+
+
+.infoBlock2
+  display: flex
+  justify-content: flex-end
+
+.info2
+  display: flex
+  flex-direction: column
+
+  a
+    font-family: $secondary-font
+    font-size: 30px
+    color: #ffffff
+    margin: 0
+    text-align: right
+
+
+  h1
+    font-family: $secondary-font
+    font-size: 30px
+    color: #ffffff
+    font-weight: 600
+    margin: 0
+    text-align: right
+  h2
+    font-family: $secondary-font
+    font-size: 30px
+    color: #ffffff
+    margin: 0
+    text-align: right
+
+#buttonsDown
+  justify-content: flex-end!important
+
+
+.mainDiv
+  height: 100vh
+
+
