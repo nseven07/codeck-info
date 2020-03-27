@@ -53,19 +53,29 @@ a:hover
   flex-direction: column
   justify-content: space-between
 
-.mainBlock
+section.communication
   background-image: url("../img/communication/background.png")
   background-size: cover
+  background-attachment: fixed
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  height: 100vh
+
+.info, .info2
+  padding: 60px 80px 0 80px
 
 .info
   display: flex
   flex-direction: column
+  flex: 1
 
   a
     font-family: $secondary-font
-    font-size: 30px
+    font-size: 20px
     color: #ffffff
-    margin: 0
+    font-weight: 300
+    margin: 5px 0 0 0
 
 
   h1
@@ -74,11 +84,13 @@ a:hover
     color: #ffffff
     font-weight: 600
     margin: 0
+
   h2
     font-family: $secondary-font
-    font-size: 30px
+    font-size: 20px
     color: #ffffff
-    margin: 0
+    margin: 10px 0 0 0
+    font-weight: 300
 
 
 .infoBlock2
@@ -88,13 +100,15 @@ a:hover
 .info2
   display: flex
   flex-direction: column
+  margin-bottom: 80px
 
   a
     font-family: $secondary-font
-    font-size: 30px
+    font-size: 20px
     color: #ffffff
-    margin: 0
+    margin: 5px 0 0 0
     text-align: right
+    font-weight: 300
 
 
   h1
@@ -104,15 +118,38 @@ a:hover
     font-weight: 600
     margin: 0
     text-align: right
+
+
   h2
     font-family: $secondary-font
-    font-size: 30px
+    font-size: 20px
     color: #ffffff
-    margin: 0
+    margin: 10px 0 0 0
     text-align: right
+    font-weight: 300
+
+
 
 #buttonsDown
-  justify-content: flex-end!important
+  justify-content: flex-end !important
 
 
 
+@media screen and (max-width: 576px)
+
+  section .communication
+    height: unset
+
+
+  .info2
+    padding: 60px 0 0 0
+
+    h2
+      padding: 0 30px
+
+
+  .info
+    padding: 60px 0 0 0
+
+    h2
+      padding: 0 30px
