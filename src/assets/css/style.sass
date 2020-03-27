@@ -18,6 +18,15 @@ $forth-color: #AA0BFF
 nav, .content
   padding: 40px 60px 0 60px
 
+nav
+  .links
+    align-items: center
+    a
+      font-family: $secondary-font
+      color: $tertiary-color
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
 body
   min-width: 320px
   overflow-x: hidden
@@ -577,13 +586,54 @@ h3.subtitle
   color: $tertiary-color
   font-size: 26px
 
-@media screen and (max-width: 1400px)
+
+.stickBetween
+  margin: auto
+  width: 91%
+  height: 1px
+  border: 1px solid #EDEDED
+
+.filterDiv
+  display: none
+
+button.active
+  color: white
+  background: $primary-color
+
+.section, .projects
+  height: 100%
+
+.projects
+  .content
+    p, span
+      max-width: 50%
+
+.content-right
+  height: 100%
+
+
+.description-small
+  font-size: 12px
+@import communication
+@import information
+
+@media screen and (max-width: 1440px)
+  .stick-black
+    .stick
+      height: 20px
+    .comInfo
+      margin: 0
   .menuItems
     span
       font-size: 30px
       padding: 20px
   .logo-content
     padding: 130px 40px 80px 40px
+  .title
+    font-size: 20px
+  .works
+    a
+      font-size: 36px
 
 @media screen and (max-width: 1200px)
   #b-mockup
@@ -617,6 +667,12 @@ h3.subtitle
     p.subtitle
       font-size: 24px
 
+@media screen and (max-width: 992px)
+  nav
+    .links
+      a
+        margin-right: 10px
+        font-size: 13px
 
 @media screen and (max-width: 768px)
   body
@@ -625,8 +681,8 @@ h3.subtitle
     .content
       padding-top: 0
   .menu-button
-    right: 0!important
-    top: 0!important
+    right: 0 !important
+    top: 0 !important
   .menuItems
     span
       padding: 12px
@@ -634,6 +690,7 @@ h3.subtitle
   .bottomBar
     flex-direction: column
     text-align: center
+
     span
       padding: 10px
       font-size: 16px
@@ -836,7 +893,6 @@ h3.subtitle
     margin-bottom: 0
 
 @media (max-width: 350px)
-
   .content
     padding: 20px 20px 0 20px
 
@@ -877,37 +933,12 @@ h3.subtitle
   .hamburger-menu
     width: 30px
 
-.stickBetween
-  margin: auto
-  width: 91%
-  height: 1px
-  border: 1px solid #EDEDED
-
-.show
-  display: flex !important
-
-.filterDiv
-  display: none
-
-button.active
-  color: white
-  background: $primary-color
-
-.section, .projects
-  height: 100%
-
-.projects
-  .content
-    p, span
-      max-width: 50%
-
-.content-right
-  height: 100%
-
 @media (max-height: 768px)
   #boyImage
     height: 280px
     width: auto
+  .fullMenu
+    padding: 20px !important
   .half-title
     font-size: 24px
   #musavir
@@ -921,8 +952,6 @@ button.active
   .content-center
     align-self: center
 
-.description-small
-  font-size: 12px
-@import communication
-@import information
+
+
 
