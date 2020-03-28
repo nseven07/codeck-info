@@ -120,6 +120,17 @@ function style() {
         .pipe(connect.reload());
 }
 
+function styleDev() {
+    return gulp.src(sourceSass)
+        .pipe(gsass({
+            includePaths: ['node_modules']
+        }).on('error', gsass.logError))
+        .pipe(gulp.dest(dist + 'assets/css'))
+        .pipe(connect.reload());
+}
+
+
+
 function injectSVG() {
     return gulp.src('./dist/*.html')
         .pipe(injectSvg(injectSvgOptions))
@@ -128,12 +139,12 @@ function injectSVG() {
 }
 
 function myWatchTasks() {
-    gulp.watch(['./src/assets/css/*.sass'], style);
+    gulp.watch(['./src/assets/css/*.sass'], styleDev);
     gulp.watch(['./src/assets/js/*.js'], scriptsDev);
     gulp.watch(['./src/presentation/**/*.html'], compile)
 }
 
-const dev = gulp.parallel(gulp.series(clean, style, copyFiles, scriptsDev, compile, injectSVG, connectGulp), myWatchTasks);
+const dev = gulp.parallel(gulp.series(clean, styleDev, copyFiles, scriptsDev, compile, injectSVG, connectGulp), myWatchTasks);
 const build = gulp.series(clean, style, copyFiles, scripts, compile, injectSVG);
 
 
