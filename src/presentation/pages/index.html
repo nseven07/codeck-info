@@ -7,16 +7,16 @@
             {% include 'partials/nav.html' %}
             <div class="pt-md-0 d-block d-sm-block d-lg-flex d-md-flex content flex-column flex-md-row align-items-center">
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h1 class="typedTitle wow fadeInDown">
+                    <h1 class="typedTitle wow fadeInDown" data-wow-delay="0.6s">
                         Yeniyiz, <br>
                         <b class="descriptive">{{ home.tr.together }}</b> {{ home.tr.we_are_here }}
                     </h1>
-                    <h3 class="subtitle wow fadeInDown" data-wow-delay="0.4s">
+                    <h3 class="subtitle wow fadeInDown" data-wow-delay="1s" data-wow-duration="2s">
                         {{ home.tr.technology }} <b class="descriptive">{{ home.tr.we_are_working }}</b>.
                     </h3>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="space d-flex justify-content-end wow fadeInRight" data-wow-delay="1s">
+                    <div class="space d-flex justify-content-end wow fadeInRight" data-wow-delay="0.4s">
 
                         <div id="spaceanimation"></div>
                         <!-- <img class="img-fluid space" src="assets/img/illustration/home/spaceElement.svg" alt="Space"> -->
@@ -25,10 +25,10 @@
             </div>
             <div class="pt-md-0 d-flex content d-flex flex-column">
                 <div class="flex-column">
-                    <h4 class="title first-title wow fadeInDown secondary mb-2 wow fadeInDown" data-wow-delay="1.3s">
+                    <h4 class="title first-title wow slideInLeft secondary mb-2 wow fadeInDown" data-wow-delay="1.3s">
                         {{ home.tr.what_do_we_do}}
                     </h4>
-                    <div class="works mb-md-1 mb-4 wow fadeInDown" data-wow-delay="1.4s">
+                    <div class="works mb-md-1 mb-4 wow slideInLeft" data-wow-delay="1.4s">
                         <a href="/projects.html?filter=web">Web</a>
                         <a href="/projects.html?filter=mobile">{{ home.tr.mobile }}</a>
                         <a href="/projects.html?filter=design">{{ home.tr.design }}</a>

@@ -123,17 +123,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     const isHomePage = document.getElementById('home-page');
     if (isHomePage) {
-        setTimeout(() => {
-            $('#home-page').fullpage({
-                autoScrolling: true,
-                navigation: true,
-                responsiveHeight: 600,
-                scrollBar: true,
-                dragAndMove: true,
-                touchSensitivity: 10,
-            });
-        }, 1000)
-
+        $('#home-page').fullpage({
+            autoScrolling: true,
+            navigation: true,
+            responsiveHeight: 600,
+            scrollBar: true,
+            dragAndMove: true,
+            touchSensitivity: 10,
+        });
     }
 });
 //
