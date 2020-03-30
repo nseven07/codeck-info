@@ -131,7 +131,6 @@ $(document).ready(function () {
                 scrollBar: true,
                 dragAndMove: true,
                 touchSensitivity: 10,
-                scrollingSpeed: 1000
             });
         }, 1000)
 
