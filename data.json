@@ -14,7 +14,8 @@
       "mobile": "Mobil",
       "design" : "Grafik Tasarım",
       "projects" : "PROJELERİMİZ",
-      "view_project" : "Projeyi İncele"
+      "view_project" : "Projeyi İncele",
+      "web": "Web"
 
     }
   },
@@ -145,6 +146,25 @@
     "tr": {
       "directions": "Adres Tarifi Al",
       "call_now": "Hemen Ara"
+    }
+  },
+  "partials": {
+    "footer": {
+      "tr": {
+        "about_us": "Hakkımızda",
+        "our_projects": "Projelerimiz",
+        "company_presentation": "Şirket Sunumu",
+        "privacy": "Tüm Hakları Saklıdır",
+        "communciation": "İletişim: ",
+        "facebook" : "Facebook",
+        "linked_in": "Linkedin",
+        "instagram": "Instagram"
+      }
+    },
+    "menu": {
+      "tr": {
+        "home_page" : "Anasayfa"
+      }
     }
   }
 }
