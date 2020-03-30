@@ -125,7 +125,6 @@ $(document).ready(function () {
             //options here
             autoScrolling: true,
             navigation: true,
-            responsiveWidth: 500,
             responsiveHeight: 600,
             scrollHorizontally: true,
             scrollBar: true,
