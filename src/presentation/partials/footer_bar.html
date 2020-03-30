@@ -9,10 +9,10 @@
                 src="assets/img/svg/linkedin.svg" alt=""></a>
     </div>
     <ul class="pages flex-column flex-md-row">
-        <li><a href="/aboutus.html" class="page-items">Hakkımızda</a></li>
-        <li><a href="/projects.html" class="page-items">Projlerimiz</a></li>
-        <li><a href="/communication.html" class="page-items">İletişim</a></li>
-        <li><a href="../../assets/presentation/codeck-sunum.pdf" target="_blank" class="page-items">Şirket Sunumu</a>
+        <li><a href="/aboutus.html" class="page-items">{{ partials.footer.tr.about_us }}</a></li>
+        <li><a href="/projects.html" class="page-items">{{ partials.footer.tr.our_projects }}</a></li>
+        <li><a href="/communication.html" class="page-items">{{ aboutus.tr.contact }}</a></li>
+        <li><a href="../../assets/presentation/codeck-sunum.pdf" target="_blank" class="page-items">{{ partials.footer.tr.company_presentation }}</a>
         </li>
     </ul>
     <div class="social-media d-none d-md-flex">
@@ -24,6 +24,6 @@
             <img src="assets/img/svg/linkedin.svg" alt="">
         </a>
     </div>
-    <div class="privacy">© 2020 Codeck Tüm Hakları Saklıdır</div>
+    <div class="privacy">© 2020 Codeck {{ partials.footer.tr.privacy }}</div>
 
 </div>
