@@ -125,15 +125,12 @@ $(document).ready(function () {
     if (isHomePage) {
         setTimeout(() => {
             $('#home-page').fullpage({
-                //options here
-                autoScrolling: false,
+                autoScrolling: true,
                 navigation: true,
                 responsiveHeight: 600,
-                scrollHorizontally: true,
                 scrollBar: true,
                 dragAndMove: true,
                 touchSensitivity: 10,
-                scrollingSpeed: 1500,
             });
         }, 1000)
 
