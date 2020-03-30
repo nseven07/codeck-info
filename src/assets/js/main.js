@@ -15,7 +15,6 @@ $(document).ready(function () {
 //Slick
 
 
-
 $(document).ready(function () {
     $('.staff-slider').slick({
         slidesToShow: 3,
@@ -57,6 +56,9 @@ $(document).ready(function () {
         infinite: false,
         dots: false,
         speed: 300,
+        scrollingSpeed: 1000,
+        dragAndMove: true,
+        touchSensitivity: 10,
         autoplay: false,
         responsive: [
             {
@@ -121,17 +123,20 @@ $(document).ready(function () {
 $(document).ready(function () {
     const isHomePage = document.getElementById('home-page');
     if (isHomePage) {
-        $('#home-page').fullpage({
-            //options here
-            autoScrolling: true,
-            navigation: true,
-            responsiveHeight: 600,
-            scrollHorizontally: true,
-            scrollBar: true,
-            dragAndMove: true,
-            touchSensitivity: 10,
-            scrollingSpeed: 400,
-        });
+        setTimeout(() => {
+            $('#home-page').fullpage({
+                //options here
+                autoScrolling: true,
+                navigation: true,
+                responsiveHeight: 600,
+                scrollHorizontally: true,
+                scrollBar: true,
+                dragAndMove: true,
+                touchSensitivity: 10,
+                scrollingSpeed: 400,
+            });
+        }, 10000)
+
     }
 });
 //
@@ -202,13 +207,14 @@ setTimeout(() => {
     $(window).resize()
 }, 500);
 
-window.onscroll = function() {scroll()};
+window.onscroll = function () {
+    scroll()
+};
 
 function scroll() {
-    if (window.pageYOffset > 100){
+    if (window.pageYOffset > 100) {
         $('.button-round').addClass('visible')
-    }
-    else {
+    } else {
         $('.button-round').removeClass('visible')
 
     }
