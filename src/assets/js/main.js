@@ -133,7 +133,7 @@ $(document).ready(function () {
                 scrollBar: true,
                 dragAndMove: true,
                 touchSensitivity: 10,
-                scrollingSpeed: 400,
+                scrollingSpeed: 1500,
             });
         }, 1000)
 
