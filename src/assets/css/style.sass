@@ -24,19 +24,40 @@ nav, .content
       a
         color: white
         text-shadow: #0b2e13 2px 2px
+
 nav
   .links
     align-items: center
+
     a
       font-family: $secondary-font
       color: $tertiary-color
       margin-right: 20px
       font-weight: 600
+
       &:last-child
         margin-right: 0
+
 body
   min-width: 320px
-  overflow-x: hidden!important
+  overflow-x: hidden !important
+
+.button-round
+  display: none
+  a
+    position: fixed
+    animation: pulse 2s infinite
+    width: 60px
+    height: 60px
+    background-color: #e22000
+    right: 40px
+    bottom: 60px
+    border-radius: 50px
+    padding: 15px
+    border: 3px solid white
+
+.visible
+  display: block !important
 
 .fullMenu
   display: none
@@ -351,8 +372,6 @@ b.descriptive
   background-image: url(../img/communication/background.png)
   width: 100%
   background-position: center
-  display
-  height: 100%
 
 #boyColumn
   height: 45%
@@ -603,7 +622,7 @@ h3.subtitle
   display: none
 
 .show
-  display: flex!important
+  display: flex !important
 
 button.active
   color: white
@@ -630,6 +649,7 @@ button.active
   .stick-black
     .stick
       height: 20px
+
     .comInfo
       margin: 0
   .menuItems

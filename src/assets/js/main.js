@@ -8,7 +8,9 @@ $(document).ready(function () {
     const targetJ = $('#' + target);
     $('.btn-active').not(targetJ).removeClass('btn-active');
     targetJ.addClass('btn-active').trigger("click");
-
+    $(".button-round a").click(function goTop() {
+        document.body.scrollTop = 0;
+    });
 });
 //Slick
 
@@ -198,3 +200,18 @@ const anim = lottie.loadAnimation(params);
 setTimeout(() => {
     $(window).resize()
 }, 500);
+
+window.onscroll = function() {scroll()};
+
+function scroll() {
+    if (window.pageYOffset > 100){
+        $('.button-round').addClass('visible')
+    }
+    else {
+        $('.button-round').removeClass('visible')
+
+    }
+
+}
+
+
