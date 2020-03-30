@@ -126,7 +126,7 @@ $(document).ready(function () {
         setTimeout(() => {
             $('#home-page').fullpage({
                 //options here
-                autoScrolling: true,
+                autoScrolling: false,
                 navigation: true,
                 responsiveHeight: 600,
                 scrollHorizontally: true,
@@ -135,7 +135,7 @@ $(document).ready(function () {
                 touchSensitivity: 10,
                 scrollingSpeed: 400,
             });
-        }, 10000)
+        }, 1000)
 
     }
 });
