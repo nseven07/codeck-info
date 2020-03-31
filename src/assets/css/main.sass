@@ -629,7 +629,14 @@ button.active
 .description-small
   font-size: 12px
 
+
 .main-logo-block
+  .logo-block
+    > div
+      @extend .col-3
+      @extend .fadeInRight
+
+.staff-slider, .imagesMain, .main-logo-block
   svg, img
-    width: 100%
-    height: auto
+    @extend .img-fluid
+
