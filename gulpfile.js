@@ -130,18 +130,18 @@ function styleDev() {
 }
 
 
-
 function injectSVG() {
     return gulp.src('./dist/*.html')
         .pipe(injectSvg(injectSvgOptions))
-        .pipe(gulp.dest(dist));
-
+        .pipe(gulp.dest(dist))
+        .pipe(connect.reload())
 }
 
 function myWatchTasks() {
     gulp.watch(['./src/assets/css/*.sass'], styleDev);
     gulp.watch(['./src/assets/js/*.js'], scriptsDev);
     gulp.watch(['./src/presentation/**/*.html'], compile)
+    gulp.watch(['./src/assets/css/*.sass'], injectSVG)
 }
 
 const dev = gulp.parallel(gulp.series(clean, styleDev, copyFiles, scriptsDev, compile, injectSVG, connectGulp), myWatchTasks);

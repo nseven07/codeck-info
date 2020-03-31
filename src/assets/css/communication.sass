@@ -1,3 +1,35 @@
+#communication1
+  position: absolute
+  top: 8%
+  padding: 0 80px
+
+#communication2
+  position: absolute
+  right: 0
+  bottom: 10%
+  padding: 0 80px
+
+.communication
+  nav
+    .links
+      a
+        color: white
+        text-shadow: #0b2e13 2px 2px
+
+.transparent-layer
+  @media (max-width: 992px)
+    width: 100%
+    height: 50%
+    position: absolute
+    background: rgba(0, 0, 0, 0.4)
+    bottom: 0
+    z-index: 0
+    left: 0
+
+.com-end-layer
+  z-index: 1
+  position: relative
+
 
 .button, #button
   transition: 0.8s cubic-bezier(0, 0.38, 0, 1)
@@ -61,6 +93,7 @@ section.communication
   flex-direction: column
   height: 100vh
   overflow: hidden
+
   div
     &:last-child
       margin-bottom: 20px
@@ -76,6 +109,7 @@ section.communication
     color: #ffffff
     font-weight: 300
     margin: 5px 0 0 0
+    display: block
 
 
   h1
@@ -91,11 +125,6 @@ section.communication
     color: #ffffff
     margin: 10px 0 0 0
     font-weight: 300
-
-
-#buttonsDown
-  justify-content: flex-end !important
-
 
 
 @media screen and (max-width: 576px)
