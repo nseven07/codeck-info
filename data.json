@@ -10,14 +10,13 @@
       "together": "Birlikteyiz",
       "we_are_here": "Buradayız.",
       "technology": "Teknolojinin getirdiği imkanları ve kolaylıkları çevremize sunabilmek için",
-      "we_are_working" : "çalışıyoruz",
+      "we_are_working": "çalışıyoruz",
       "mobile": "Mobil",
-      "design" : "Grafik Tasarım",
-      "projects" : "PROJELERİMİZ",
-      "view_project" : "Projeyi İncele",
-      "view_website" : "Websitesini İncele",
+      "design": "Grafik Tasarım",
+      "projects": "PROJELERİMİZ",
+      "view_project": "Projeyi İncele",
+      "view_website": "Websitesini İncele",
       "web": "Web"
-
     }
   },
   "aboutus": {
@@ -45,11 +44,11 @@
   },
   "projects": {
     "main": {
-      "tr":{
+      "tr": {
         "all": "Tümü",
         "web": "Web",
-        "graphic" : "Tasarım",
-        "belong_to_us" : "Bize Ait"
+        "graphic": "Tasarım",
+        "belong_to_us": "Bize Ait"
       }
     },
     "ahtapot": {
@@ -69,7 +68,7 @@
         "tags": "saas yazılım projesi planlama, matlab-docker-python entegrasyonu, web ve mobil uygulama geliştirme, tasarım çalışmaları ",
         "description": "Matlab üzerinden hazırlanmış formüllerin web ve mobil platformlar üzerinde abonelik modeli ile satışa sunulması",
         "link": "https://liquefaction.bmsumer.com",
-        "link_projects":  "/projects.html#bmsumer-1"
+        "link_projects": "/projects.html#bmsumer-1"
       }
     },
     "hamidiye": {
@@ -79,7 +78,7 @@
         "tags": "tasarım, mobile ve web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
         "description": "Ürün siparişi müşteri ve bayi taraflı sipariş sistemi ile tüm satış öncesi, satış ve sonrası kurguları",
         "link": "https://onlinesiparis.hamidiye.istanbul",
-        "link_projects":  "/projects.html#hamidiye-1"
+        "link_projects": "/projects.html#hamidiye-1"
       }
     },
     "podbia": {
@@ -89,7 +88,7 @@
         "tags": "tasarım desteği, web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
         "description": "Podcast Dinleme, Takip Etme, Özel Podcast İçeriklerine Erişme, Podcastlerden bildirim alma",
         "link": "https://podbia.com",
-        "link_projects":  "/projects.html#podbia-1"
+        "link_projects": "/projects.html#podbia-1"
       }
     },
     "gorselco": {
@@ -99,7 +98,7 @@
         "description": "Hazır temalar ya da kendi yüklediğiniz tema ile elinizdeki verileri kullanarak otomatik videolar oluşturun",
         "tags": "fikir, tasarım, frontend, backend, db, video otomasyon yazılımları",
         "link": "https://gorsel.co",
-        "link_projects":  "/projects.html#gorselco-1"
+        "link_projects": "/projects.html#gorselco-1"
       }
     },
     "musavir": {
@@ -109,7 +108,7 @@
         "description": "Kobilere şirketlerini açmadan ya da açtıktan sonra işlerini geliştirmeleri için yapmaları gerekenleri adım adım görevler vererek tamamlatıyoruz.  Şirket Açılışı, gerekli Oda ve Kurum kayıtları, şirketlerini ileriye taşımaları için Kobi Eğitimleri,  Otomatik Websitesi ve Marka Oluşturma, E-posta Adresi, Devlet Kurumu Abonelikleri, İş Yönetim Yazılımları, Muhasebe, Personel Kontrol Denetleme Sistemleri, İş Akış Formları ve Dilekçeler, Tedarikçi zincirleri abonelikleri, sanal pazar abonelikleri. Hepsi bir arada ve bir süreliğine ücretsiz!   ",
         "tags": "fikir, proje yönetimi, tasarım, frontend, backend",
         "link": "https://musavir.co",
-        "link_projects":  "/projects.html#musavir-1"
+        "link_projects": "/projects.html#musavir-1"
       }
     },
     "kafeinbox": {
@@ -119,7 +118,7 @@
         "description": "Her hafta taze kahveler ve tüm 3.nesil demleme ekipmanları",
         "tags": "fikir, proje planlaması,  tasarım, frontend, backend, kutu tasarımları, eğitim planlaması",
         "link": "https://kafeinbox.com",
-        "link_projects":  "/projects.html#kafeinbox-1"
+        "link_projects": "/projects.html#kafeinbox-1"
       }
     },
     "adekstra": {
@@ -129,27 +128,27 @@
         "description": "Web, Mobil, TV ve DOOH alanlarında Reklam Yönetimi, Raporlama, Mecra yönetimi, İçerik yönetimi, Kullanıcı Analizi, Uygulama Analizi, Üçüncü Parti Reklam Mecralarındaki Reklamları tek kanaldan yönetebilme",
         "tags": "fikir, proje planlaması, tasarım, frontend, backend, tv uygulamaları",
         "link": "https://adekstra.com",
-        "link_projects":  "/projects.html#adekstra-1"
+        "link_projects": "/projects.html#adekstra-1"
       }
     },
     "iciniz": {
       "tr": {
         "title": "İçiniz",
         "subtitle": "Online İçecek Pazaryeri",
-        "description": "Fonksiyonel İçecek Pazaryeri",
+        "description": "Bu markette sadece zilyon çeşit içilebilir ürün var. Sadece marka değil, içerik bazlı arama yaparak vücudunuzun ihtiyaçlarına göre  sepetinizi oluşturun.",
         "tags": "fikir, proje planlaması, tasarım, frontend, backend",
         "link": "https://iciniz.com",
-        "link_projects":  "/projects.html#iciniz-1"
+        "link_projects": "/projects.html#iciniz-1"
       }
     },
     "gitmeden": {
       "tr": {
         "title": "Gitmeden",
         "subtitle": "Gayrimenkul Değerleme Randevu Sistemi",
-        "description": "İstediğiniz Gayrimenkul için Değerleme Uzmanlarımız sizin adınıza incelemeyi yapıp, inceleme sırasında Görüntülü Konuşma ve Mesajlaşma ile size gayrimenkulu tanıtsın,  tüm detayları video, fotoğraf, basılı ve dijital rapor olarak iletsin.",
+        "description": "Lokasyon bazlı canlı görüntü ve bilgi paylaşım sistemi.\nLokasyonu paylaş, irtibat geçmemizi istediğin kişiyi bildir, randevu alalım. Profesyonellerimiz görmek istediğin yerden gerçek zamanlı görüntüleri seninle paylaşsın, dilediğin yerde dilediğin zamanda seyret. Gayrimenkul hakkında izlenimlerimizi ve çektiğimiz fotoğrafları aktaracağımız dolu, doyurucu bir rapor hazırlayıp sana verelim. Söz uçsun, yazı kalsın.",
         "tags": "proje planlaması, tasarım, frontend, backend, mobil uygulama geliştirme, sistem desteği",
         "link": "https://gitmeden.com",
-        "link_projects":  "/projects.html#gitmeden-1"
+        "link_projects": "/projects.html#gitmeden-1"
       }
     }
   },
@@ -167,7 +166,7 @@
         "company_presentation": "Şirket Sunumu",
         "privacy": "Tüm Hakları Saklıdır",
         "communciation": "İletişim: ",
-        "facebook" : "Facebook",
+        "facebook": "Facebook",
         "linked_in": "Linkedin",
         "instagram": "Instagram",
         "youtube": "Youtube"
@@ -175,7 +174,7 @@
     },
     "menu": {
       "tr": {
-        "home_page" : "Anasayfa"
+        "home_page": "Anasayfa"
       }
     }
   }
