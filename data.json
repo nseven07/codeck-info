@@ -15,6 +15,7 @@
       "design" : "Grafik Tasarım",
       "projects" : "PROJELERİMİZ",
       "view_project" : "Projeyi İncele",
+      "view_website" : "Websitesini İncele",
       "web": "Web"
 
     }
@@ -57,7 +58,8 @@
         "subtitle": "Teşvik Hesaplama Web Yazılımı",
         "tags": "kurumsal kimlik, tasarım, yazılım projesi planlama, frontend ve backend geliştirmeleri, sistem bakım ve yönetim desteği",
         "description": "SGK Cari Dönem ve Geçmiş Dönem Devlet Teşvikleri Hesaplama Yazılımı",
-        "link": "https://akilliahtapot.com"
+        "link": "https://akilliahtapot.com",
+        "link_projects": "/projects.html#ahtapot-1"
       }
     },
     "bmsumer": {
@@ -66,7 +68,8 @@
         "subtitle": "Sıvılaşma Hesaplama Web ve Mobil Uygulaması",
         "tags": "saas yazılım projesi planlama, matlab-docker-python entegrasyonu, web ve mobil uygulama geliştirme, tasarım çalışmaları ",
         "description": "Matlab üzerinden hazırlanmış formüllerin web ve mobil platformlar üzerinde abonelik modeli ile satışa sunulması",
-        "link": "https://liquefaction.bmsumer.com"
+        "link": "https://liquefaction.bmsumer.com",
+        "link_projects":  "/projects.html#bmsumer-1"
       }
     },
     "hamidiye": {
@@ -75,7 +78,8 @@
         "subtitle": "Müşteri Bayi Mobil ve Web Uygulamaları",
         "tags": "tasarım, mobile ve web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
         "description": "Ürün siparişi müşteri ve bayi taraflı sipariş sistemi ile tüm satış öncesi, satış ve sonrası kurguları",
-        "link": "https://onlinesiparis.hamidiye.istanbul"
+        "link": "https://onlinesiparis.hamidiye.istanbul",
+        "link_projects":  "/projects.html#hamidiye-1"
       }
     },
     "podbia": {
@@ -84,7 +88,8 @@
         "subtitle": "Türkiye\nin ilk Podcast Uygulaması!",
         "tags": "tasarım desteği, web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
         "description": "Podcast Dinleme, Takip Etme, Özel Podcast İçeriklerine Erişme, Podcastlerden bildirim alma",
-        "link": "https://podbia.com"
+        "link": "https://podbia.com",
+        "link_projects":  "/projects.html#podbia-1"
       }
     },
     "gorselco": {
@@ -93,7 +98,8 @@
         "subtitle": "Otomatik Video Hazırlama Saas",
         "description": "Hazır temalar ya da kendi yüklediğiniz tema ile elinizdeki verileri kullanarak otomatik videolar oluşturun",
         "tags": "fikir, tasarım, frontend, backend, db, video otomasyon yazılımları",
-        "link": "https://gorsel.co"
+        "link": "https://gorsel.co",
+        "link_projects":  "/projects.html#gorselco-1"
       }
     },
     "musavir": {
@@ -102,7 +108,8 @@
         "subtitle": "Kobiler için Akıllı Danışman",
         "description": "Kobilere şirketlerini açmadan ya da açtıktan sonra işlerini geliştirmeleri için yapmaları gerekenleri adım adım görevler vererek tamamlatıyoruz.  Şirket Açılışı, gerekli Oda ve Kurum kayıtları, şirketlerini ileriye taşımaları için Kobi Eğitimleri,  Otomatik Websitesi ve Marka Oluşturma, E-posta Adresi, Devlet Kurumu Abonelikleri, İş Yönetim Yazılımları, Muhasebe, Personel Kontrol Denetleme Sistemleri, İş Akış Formları ve Dilekçeler, Tedarikçi zincirleri abonelikleri, sanal pazar abonelikleri. Hepsi bir arada ve bir süreliğine ücretsiz!   ",
         "tags": "fikir, proje yönetimi, tasarım, frontend, backend",
-        "link": "https://musavir.co"
+        "link": "https://musavir.co",
+        "link_projects":  "/projects.html#musavir-1"
       }
     },
     "kafeinbox": {
@@ -111,7 +118,8 @@
         "subtitle": "Türkiyenin İlk Online Kahve Eğitim ve Abonelik Platformu!",
         "description": "Her hafta taze kahveler ve tüm 3.nesil demleme ekipmanları",
         "tags": "fikir, proje planlaması,  tasarım, frontend, backend, kutu tasarımları, eğitim planlaması",
-        "link": "https://kafeinbox.com"
+        "link": "https://kafeinbox.com",
+        "link_projects":  "/projects.html#kafeinbox-1"
       }
     },
     "adekstra": {
@@ -120,7 +128,8 @@
         "subtitle": "Reklam ve Analiz Platformu",
         "description": "Web, Mobil, TV ve DOOH alanlarında Reklam Yönetimi, Raporlama, Mecra yönetimi, İçerik yönetimi, Kullanıcı Analizi, Uygulama Analizi, Üçüncü Parti Reklam Mecralarındaki Reklamları tek kanaldan yönetebilme",
         "tags": "fikir, proje planlaması, tasarım, frontend, backend, tv uygulamaları",
-        "link": "https://adekstra.com"
+        "link": "https://adekstra.com",
+        "link_projects":  "/projects.html#adekstra-1"
       }
     },
     "iciniz": {
@@ -129,7 +138,8 @@
         "subtitle": "Online İçecek Pazaryeri",
         "description": "Fonksiyonel İçecek Pazaryeri",
         "tags": "fikir, proje planlaması, tasarım, frontend, backend",
-        "link": "https://iciniz.com"
+        "link": "https://iciniz.com",
+        "link_projects":  "/projects.html#iciniz-1"
       }
     },
     "gitmeden": {
@@ -138,7 +148,8 @@
         "subtitle": "Gayrimenkul Değerleme Randevu Sistemi",
         "description": "İstediğiniz Gayrimenkul için Değerleme Uzmanlarımız sizin adınıza incelemeyi yapıp, inceleme sırasında Görüntülü Konuşma ve Mesajlaşma ile size gayrimenkulu tanıtsın,  tüm detayları video, fotoğraf, basılı ve dijital rapor olarak iletsin.",
         "tags": "proje planlaması, tasarım, frontend, backend, mobil uygulama geliştirme, sistem desteği",
-        "link": "https://iciniz.com"
+        "link": "https://gitmeden.com",
+        "link_projects":  "/projects.html#gitmeden-1"
       }
     }
   },
