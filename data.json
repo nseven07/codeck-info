@@ -144,8 +144,8 @@
     "gitmeden": {
       "tr": {
         "title": "Gitmeden",
-        "subtitle": "Gayrimenkul Değerleme Randevu Sistemi",
-        "description": "Lokasyon bazlı canlı görüntü ve bilgi paylaşım sistemi.\nLokasyonu paylaş, irtibat geçmemizi istediğin kişiyi bildir, randevu alalım. Profesyonellerimiz görmek istediğin yerden gerçek zamanlı görüntüleri seninle paylaşsın, dilediğin yerde dilediğin zamanda seyret. Gayrimenkul hakkında izlenimlerimizi ve çektiğimiz fotoğrafları aktaracağımız dolu, doyurucu bir rapor hazırlayıp sana verelim. Söz uçsun, yazı kalsın.",
+        "subtitle": "Lokasyon bazlı canlı görüntü ve bilgi paylaşım sistemi",
+        "description": "Lokasyonu paylaş, irtibat geçmemizi istediğin kişiyi bildir, randevu alalım. Profesyonellerimiz görmek istediğin yerden gerçek zamanlı görüntüleri seninle paylaşsın, dilediğin yerde dilediğin zamanda seyret. Gayrimenkul hakkında izlenimlerimizi ve çektiğimiz fotoğrafları aktaracağımız dolu, doyurucu bir rapor hazırlayıp sana verelim. Söz uçsun, yazı kalsın.",
         "tags": "proje planlaması, tasarım, frontend, backend, mobil uygulama geliştirme, sistem desteği",
         "link": "https://gitmeden.com",
         "link_projects": "/projects.html#gitmeden-1"
