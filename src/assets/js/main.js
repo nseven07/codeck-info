@@ -205,6 +205,11 @@ window.onscroll = function () {
     scroll()
 };
 
+$(window).on('beforeunload', function () {
+    $(window).scrollTop(0);
+});
+
+
 function scroll() {
     if (window.pageYOffset > 100) {
         $('.button-round').addClass('visible')
@@ -214,5 +219,6 @@ function scroll() {
     }
 
 }
+
 
 
