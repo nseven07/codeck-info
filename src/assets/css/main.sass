@@ -204,6 +204,7 @@ a
   padding: 30px 0
   position: absolute
   bottom: 80px
+  z-index: 2
 
   a
     margin-right: 20px
@@ -221,9 +222,6 @@ a
 .secondary
   color: $secondary-color
   font-weight: 100
-
-.half-title
-  width: 45%
 
 #spaceanimation
   min-height: 100%
@@ -584,6 +582,7 @@ b.descriptive
 #mockup
   display: flex
   justify-content: center
+  z-index: 1
 
   #b-mockup
     max-width: 350px
@@ -620,7 +619,10 @@ button.active
 .projects
   .content
     p, span
-      max-width: 50%
+      max-width: 80%
+
+    span
+      justify-content: space-around
 
 .content-right
   height: 100%
