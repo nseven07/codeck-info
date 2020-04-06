@@ -11,6 +11,7 @@ $(document).ready(function () {
     $(".button-round a").click(function goTop() {
         document.body.scrollTop = 0;
     });
+    new WOW({mobile: false}).init();
 });
 //Slick
 
@@ -128,7 +129,6 @@ $(document).ready(function () {
             navigation: true,
             responsiveHeight: 600,
             scrollBar: true,
-            dragAndMove: true,
             touchSensitivity: 10,
         });
     }
