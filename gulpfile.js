@@ -23,9 +23,6 @@ const nodeModules = './node_modules/';
 
 const foreach = require('gulp-foreach');
 
-const injectSvg = require('gulp-inject-svg');
-const injectSvgOptions = {base: './dist/'};
-
 
 const paths = {
     js: 'assets/js/',
@@ -129,23 +126,14 @@ function styleDev() {
         .pipe(connect.reload());
 }
 
-
-function injectSVG() {
-    return gulp.src('./dist/*.html')
-        .pipe(injectSvg(injectSvgOptions))
-        .pipe(gulp.dest(dist))
-        .pipe(connect.reload())
-}
-
 function myWatchTasks() {
     gulp.watch(['./src/assets/css/*.sass'], styleDev);
     gulp.watch(['./src/assets/js/*.js'], scriptsDev);
-    gulp.watch(['./src/presentation/**/*.html'], compile)
-    gulp.watch(['./src/assets/css/*.sass'], injectSVG)
+    gulp.watch(['./src/presentation/**/*.html'], compile);
 }
 
-const dev = gulp.parallel(gulp.series(clean, styleDev, copyFiles, scriptsDev, compile, injectSVG, connectGulp), myWatchTasks);
-const build = gulp.series(clean, style, copyFiles, scripts, compile, injectSVG);
+const dev = gulp.parallel(gulp.series(clean, styleDev, copyFiles, scriptsDev, compile, connectGulp), myWatchTasks);
+const build = gulp.series(clean, style, copyFiles, scripts, compile);
 
 
 exports.clean = clean;
