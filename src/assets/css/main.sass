@@ -23,6 +23,24 @@ body
   min-width: 320px
   overflow-x: hidden !important
 
+.slick-prev, .slick-next
+  width: auto
+  height: auto
+
+  &:before
+    width: 30px
+    height: 30px
+    display: block
+
+.slick-prev
+  &:before
+    content: ""
+    background-image: url("../../assets/img/svg/arrow-left.svg")
+
+.slick-next
+  &:before
+    content: ""
+    background-image: url("../../assets/img/svg/arrow-right.svg")
 
 .button-round
   display: none
@@ -45,6 +63,7 @@ body
 
 .fullMenu
   display: none
+
 
   .menu-button
     display: none
@@ -84,7 +103,7 @@ body.opened
 
     &:after
       content: ""
-      animation: fadeIn 0.8s ease
+      animation: fadeIn 0.4s ease
       position: absolute
       top: 0
       left: 0
@@ -618,11 +637,14 @@ button.active
 
 .projects
   .content
+    span
+      a
+        &:first-child
+          border-right: 1px solid rgba(51, 51, 51, 0.2)
+          padding-right: 20px
+
     p, span
       max-width: 80%
-
-    span
-      justify-content: space-around
 
 .content-right
   height: 100%
