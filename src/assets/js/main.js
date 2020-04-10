@@ -1,8 +1,9 @@
-$('#menuActive, .menu-close').click(function () {
-    $('body').toggleClass("opened");
-});
-
 $(document).ready(function () {
+
+    $('#menuActive, .menu-close').click(function () {
+        $('body').toggleClass("opened");
+    });
+
     const datas = window.location.search.replace('?', '').split('=');
     const target = datas[1];
     const targetJ = $('#' + target);
@@ -11,12 +12,9 @@ $(document).ready(function () {
     $(".button-round a").click(function goTop() {
         document.body.scrollTop = 0;
     });
+
     new WOW({mobile: false}).init();
-});
-//Slick
 
-
-$(document).ready(function () {
     $('.staff-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -118,7 +116,8 @@ $(document).ready(function () {
         ]
     });
 });
-//
+//Slick
+
 
 //Full Page Slider
 $(document).ready(function () {
@@ -131,6 +130,17 @@ $(document).ready(function () {
             scrollBar: true,
             touchSensitivity: 10,
         });
+
+        const params = {
+            container: document.getElementById('spaceanimation'),
+            path: './assets/animations/space.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        };
+
+        const anim = lottie.loadAnimation(params);
+
     }
 });
 //
@@ -186,16 +196,6 @@ if (projectPage) {
         });
     }
 }
-
-const params = {
-    container: document.getElementById('spaceanimation'),
-    path: './assets/animations/space.json',
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-};
-
-const anim = lottie.loadAnimation(params);
 
 setTimeout(() => {
     $(window).resize()
