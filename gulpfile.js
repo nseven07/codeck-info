@@ -15,6 +15,7 @@ const uglify = require('gulp-uglify-es').default;
 const header = require('gulp-header');
 const imagemin = require('gulp-imagemin');
 const data = require('gulp-data');
+const htmlmin = require('gulp-htmlmin');
 
 const templates = './src/presentation/';
 const dist = './dist/';
@@ -56,6 +57,7 @@ function compile() {
             return stream
                 .pipe(twig({base: './src/presentation'}))
         }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());
 }

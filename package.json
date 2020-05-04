@@ -8,7 +8,9 @@
   },
   "author": "Necip Seven",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  },
   "devDependencies": {
     "gulp-inject-svg": "git://github.com:cKurultayKalkan/gulp-inject-svg.git",
     "lottie-web": "^5.6.6",
