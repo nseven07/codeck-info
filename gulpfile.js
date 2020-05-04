@@ -32,13 +32,14 @@ const paths = {
 };
 
 const sourceJs = [
-    nodeModules + 'jquery/dist/jquery.js',
+    nodeModules + 'jquery/dist/jquery.slim.min.js',
     nodeModules + 'wowjs/dist/wow.min.js',
     nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
     nodeModules + '@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     nodeModules + 'fullpage.js/dist/fullpage.js',
     nodeModules + 'lottie-web/build/player/lottie.min.js',
+    nodeModules + 'vanilla-lazyload/dist/lazyload.min.js',
     nodeModules + 'fullpage.js/dist/fullpage.extensions.min.js',
     homePath + 'js/main.js',
     homePath + 'js/console.js',
@@ -57,7 +58,7 @@ function compile() {
             return stream
                 .pipe(twig({base: './src/presentation'}))
         }))
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());
 }
