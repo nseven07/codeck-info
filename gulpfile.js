@@ -100,7 +100,11 @@ function copyFiles() {
         .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*', './src/assets/presentation/**/*',
             './src/assets/animations/**/*'
         ], {base: './src/'})
-        //.pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5, svgoPlugins: [{removeViewBox: true}]}))
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            optimizationLevel: 5,
+        }))
         .pipe(gulp.dest(dist))
 }
 
