@@ -15,43 +15,6 @@ $(document).ready(function () {
 
     new WOW({mobile: false}).init();
 
-    $('.projectImages').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        speed: 300,
-        scrollingSpeed: 1000,
-        dragAndMove: true,
-        touchSensitivity: 10,
-        autoplay: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
     $('.mobil-logo').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -82,7 +45,6 @@ $(document).ready(function () {
         ]
     });
 });
-//Slick
 
 
 //Full Page Slider
@@ -108,83 +70,112 @@ $(document).ready(function () {
         const anim = lottie.loadAnimation(params);
 
     }
-});
-//
 
-const projectPage = document.getElementById('project-page');
 
-if (projectPage) {
-    filterSelection("all");
+    const projectPage = document.getElementById('project-page');
 
-    function filterSelection(c) {
-        let x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c === "all") c = "";
-        for (i = 0; i < x.length; i++) {
-            removeClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-        }
-    }
+    if (projectPage) {
+        filterSelection("all");
 
-    function addClass(element, name) {
-        let i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) === -1) {
-                element.className += " " + arr2[i];
+        function filterSelection(c) {
+            let x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c === "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
             }
         }
-    }
 
-    function removeClass(element, name) {
-        let i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
+        function addClass(element, name) {
+            let i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) === -1) {
+                    element.className += " " + arr2[i];
+                }
             }
         }
-        element.className = arr1.join(" ");
-    }
 
-
-    const btnContainer = document.getElementById("buttons");
-    const btns = btnContainer.getElementsByClassName("btn");
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            const current = document.getElementsByClassName("btn-active");
-            if (current.length) {
-                current[0].className = current[0].className.replace(" btn-active", "");
+        function removeClass(element, name) {
+            let i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
             }
-            this.className += " btn-active";
+            element.className = arr1.join(" ");
+        }
+
+
+        const btnContainer = document.getElementById("buttons");
+        const btns = btnContainer.getElementsByClassName("btn");
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                const current = document.getElementsByClassName("btn-active");
+                if (current.length) {
+                    current[0].className = current[0].className.replace(" btn-active", "");
+                }
+                this.className += " btn-active";
+            });
+        }
+
+        $('.projectImages').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false,
+            speed: 300,
+            scrollingSpeed: 1000,
+            dragAndMove: true,
+            touchSensitivity: 10,
+            autoplay: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     }
-}
+});
 
 setTimeout(() => {
     $(window).resize()
 }, 500);
 
-window.onscroll = function () {
-    scroll()
-};
 
 $(window).on('beforeunload', function () {
     $(window).scrollTop(0);
 });
 
-
 function scroll() {
-    if (window.pageYOffset > 100) {
-        $('.button-round').addClass('visible')
-    } else {
-        $('.button-round').removeClass('visible')
-
-    }
-
+    const target = $('.button-round');
+    window.pageYOffset > 100 ? target.addClass('visible') : target.removeClass('visible')
 }
 
+window.onscroll = scroll;
 
 
