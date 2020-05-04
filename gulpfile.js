@@ -38,9 +38,9 @@ const sourceJs = [
     nodeModules + 'slick-carousel/slick/slick.js',
     nodeModules + '@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     nodeModules + 'fullpage.js/dist/fullpage.js',
+    nodeModules + 'fullpage.js/dist/fullpage.extensions.min.js',
     nodeModules + 'lottie-web/build/player/lottie.min.js',
     nodeModules + 'vanilla-lazyload/dist/lazyload.min.js',
-    nodeModules + 'fullpage.js/dist/fullpage.extensions.min.js',
     homePath + 'js/main.js',
     homePath + 'js/console.js',
 ];
@@ -100,11 +100,11 @@ function copyFiles() {
         .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*', './src/assets/presentation/**/*',
             './src/assets/animations/**/*'
         ], {base: './src/'})
-        .pipe(imagemin({
-            interlaced: true,
-            progressive: true,
-            optimizationLevel: 5,
-        }))
+        //.pipe(imagemin({
+        //    interlaced: true,
+        //    progressive: true,
+        //    optimizationLevel: 5,
+        //}))
         .pipe(gulp.dest(dist))
 }
 
