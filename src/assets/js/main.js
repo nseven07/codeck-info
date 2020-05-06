@@ -172,7 +172,7 @@ $(window).on('beforeunload', function () {
 });
 
 function scroll() {
-    const target = $('.button-round');
+    const target = $('.button-round, .button-github');
     window.pageYOffset > 100 ? target.addClass('visible') : target.removeClass('visible')
 }
 

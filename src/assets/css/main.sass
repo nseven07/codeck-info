@@ -7,8 +7,23 @@ nav
   padding: 20px 60px
 
 nav
+  div.social-media
+    margin-left: 40px
+    position: relative
+    &:before
+      content: ""
+      left: -20px
+      width: 2px
+      height: 30px
+      position: absolute
+      opacity: .2
+      background-color: $secondary-color
+    a
+      margin-right: 10px
   .links
     align-items: center
+
+
 
     a
       font-family: $secondary-font
@@ -41,6 +56,42 @@ body
   &:before
     content: ""
     background-image: url("../../assets/img/svg/arrow-right.svg")
+
+.button-github
+  display: none
+
+  a
+    position: fixed
+    animation: pulse 2s infinite
+    width: 60px
+    height: 60px
+    background-color: #0366d6
+    right: 120px
+    bottom: 60px
+    border-radius: 50px
+    border: 3px solid white
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &:before
+      position: absolute
+      content: "Bu Proje Github Üzerinde Yayınlanmıştır"
+      opacity: 0
+      right: -150px
+      transition: 1s ease
+
+
+    img
+      width: 50px
+
+    &:hover
+      width: 360px
+      &:before
+        opacity: 1
+        right: 20px
+        color: white
+        font-family: $secondary-font
+
 
 .button-round
   display: none
