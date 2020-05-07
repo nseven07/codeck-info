@@ -108,7 +108,7 @@
   #buttonText
     color: #333
 
-  #codeckimg
+  .codeckimg
     min-width: 180px
 
   .info
@@ -271,15 +271,7 @@
     a
       font-size: 24px
   .white-brand
-    max-height: 30px
-    top: 0
-    right: 0
-    padding: 5px
-    text-align: right
-    z-index: 99999
-    background: #333
-    transform: translateY(-100%)
-    width: 100%
+    display: none
   .space
     margin-bottom: 0
 
@@ -323,7 +315,7 @@
       font-size: 16px
       margin-bottom: 0
       text-align: center
-  #codeckimg
+  .codeckimg
     min-width: 100px !important
   .hamburger-menu
     width: 30px
@@ -335,6 +327,8 @@
       font-size: 42px
 
 @media (max-height: 768px)
+  nav div.social-media
+    display: none
   #boyImage
     height: 280px
     width: auto

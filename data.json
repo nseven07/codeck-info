@@ -8,6 +8,7 @@
     "tr": {
       "what_do_we_do": "Neler yapıyoruz?",
       "together": "Birlikteyiz",
+      "new": "Yeniyiz",
       "we_are_here": "Buradayız.",
       "technology": "Teknolojinin getirdiği imkanları ve kolaylıkları çevremize sunabilmek için",
       "we_are_working": "çalışıyoruz",
@@ -77,7 +78,7 @@
         "subtitle": "Müşteri Bayi Mobil ve Web Uygulamaları",
         "tags": "tasarım, mobile ve web uygulama geliştirme, sistem yazılımları geliştirme, sistem bakım ve desteği",
         "description": "Ürün siparişi müşteri ve bayi taraflı sipariş sistemi ile tüm satış öncesi, satış ve sonrası kurguları",
-        "link": "https://onlinesiparis.hamidiye.istanbul",
+        "link": "https://siparis.hamidiye.istanbul",
         "link_projects": "/projects.html#hamidiye-1"
       }
     },

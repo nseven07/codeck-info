@@ -1,3 +1,43 @@
+const CODECK = {
+    goTop: function () {
+        document.body.scrollTop = 0;
+    }
+};
+
+CODECK.addClass = function (element, name) {
+    let i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) === -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+};
+
+
+CODECK.removeClass = function (element, name) {
+    let i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+};
+
+CODECK.filterSelection = function (c) {
+    let x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c === "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        CODECK.removeClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) CODECK.addClass(x[i], "show");
+    }
+};
+
 $(document).ready(function () {
 
     $('#menuActive, .menu-close').click(function () {
@@ -9,9 +49,7 @@ $(document).ready(function () {
     const targetJ = $('#' + target);
     $('.btn-active').not(targetJ).removeClass('btn-active');
     targetJ.addClass('btn-active').trigger("click");
-    $(".button-round a").click(function goTop() {
-        document.body.scrollTop = 0;
-    });
+    $(".button-round a").click(CODECK.goTop);
 
     new WOW({mobile: false}).init();
 
@@ -56,7 +94,7 @@ $(document).ready(function () {
             navigation: true,
             responsiveHeight: 600,
             scrollBar: true,
-            touchSensitivity: 10,
+            touchSensitivity: 20,
         });
 
         const params = {
@@ -75,41 +113,8 @@ $(document).ready(function () {
     const projectPage = document.getElementById('project-page');
 
     if (projectPage) {
-        filterSelection("all");
 
-        function filterSelection(c) {
-            let x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c === "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                removeClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-            }
-        }
-
-        function addClass(element, name) {
-            let i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) === -1) {
-                    element.className += " " + arr2[i];
-                }
-            }
-        }
-
-        function removeClass(element, name) {
-            let i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
+        CODECK.filterSelection("all");
 
         const btnContainer = document.getElementById("buttons");
         const btns = btnContainer.getElementsByClassName("btn");
@@ -160,6 +165,9 @@ $(document).ready(function () {
             ]
         });
     }
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
 });
 
 setTimeout(() => {
