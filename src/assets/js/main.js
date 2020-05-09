@@ -129,7 +129,7 @@ $(document).ready(function () {
         }
 
         $('.projectImages').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: false,
             dots: false,

@@ -2,6 +2,7 @@
 
 html, body
   font-family: Roboto, sans-serif
+  color: #333
 
 nav
   padding: 20px 60px
@@ -57,12 +58,12 @@ body
 .slick-prev
   &:before
     content: ""
-    background-image: url("../../assets/img/svg/arrow-left.svg")
+    background-image: url("../../assets/img/svg/left.svg")
 
 .slick-next
   &:before
     content: ""
-    background-image: url("../../assets/img/svg/arrow-right.svg")
+    background-image: url("../../assets/img/svg/right.svg")
 
 .button-github
   display: none
@@ -172,13 +173,6 @@ body.opened
       height: 100vh
       display: flex
       z-index: -1
-
-a
-  transition: 0.8s ease
-
-  &:hover
-    text-decoration: none !important
-    color: #ffeb3b
 
 .primaryFont
   font-family: $primary-font
@@ -669,6 +663,21 @@ h3.subtitle
 
 .filterDiv
   display: none
+  height: 80vh
+
+  .title
+    color: #e22000
+
+  .subtitle
+    font-size: 20px
+
+  p
+    color: #626262
+    font-size: 16px
+    font-weight: 300
+
+  pre.primaryFont
+    text-align: right
 
 .show
   display: flex !important
@@ -721,3 +730,9 @@ button.active
     top: 4px
     position: absolute
 
+a
+  transition: 0.8s ease
+
+  &:hover
+    text-decoration: none !important
+    color: #fd000c
