@@ -89,13 +89,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     const isHomePage = document.getElementById('home-page');
     if (isHomePage) {
-        $('#home-page').fullpage({
-            autoScrolling: true,
-            navigation: true,
-            responsiveHeight: 600,
-            scrollBar: true,
-            touchSensitivity: 20,
-        });
+
 
         const params = {
             container: document.getElementById('spaceanimation'),
