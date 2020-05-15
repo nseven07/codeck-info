@@ -37,7 +37,6 @@ const sourceJs = [
     homePath + 'js/bsjslight4.min.js',
     nodeModules + 'slick-carousel/slick/slick.js',
     nodeModules + '@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-    nodeModules + 'fullpage.js/dist/fullpage.js',
     nodeModules + 'lottie-web/build/player/lottie.min.js',
     nodeModules + 'vanilla-lazyload/dist/lazyload.min.js',
     homePath + 'js/main.js',

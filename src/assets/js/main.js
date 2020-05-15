@@ -90,7 +90,6 @@ $(document).ready(function () {
     const isHomePage = document.getElementById('home-page');
     if (isHomePage) {
 
-
         const params = {
             container: document.getElementById('spaceanimation'),
             path: './assets/animations/space.json',
