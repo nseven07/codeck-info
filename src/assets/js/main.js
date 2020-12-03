@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     new WOW({mobile: false}).init();
 
-    $('.mobil-logo').slick({
+    /* $('.mobil-logo').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -81,7 +81,7 @@ $(document).ready(function () {
                 }
             }
         ]
-    });
+    });*/
 });
 
 
